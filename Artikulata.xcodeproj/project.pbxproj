@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166728508C0A002F9E3A /* ArtikulataApp.swift */; };
+		C506166A28508C0A002F9E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166928508C0A002F9E3A /* ContentView.swift */; };
+		C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C506166B28508C0B002F9E3A /* Assets.xcassets */; };
+		C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C506166E28508C0B002F9E3A /* Preview Assets.xcassets */; };
+		C506167128508C0B002F9E3A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506167028508C0B002F9E3A /* Persistence.swift */; };
+		C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C506167228508C0B002F9E3A /* Artikulata.xcdatamodeld */; };
+		C506167E28508C0B002F9E3A /* ArtikulataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506167D28508C0B002F9E3A /* ArtikulataTests.swift */; };
+		C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168728508C0B002F9E3A /* ArtikulataUITests.swift */; };
+		C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C506167A28508C0B002F9E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C506165C28508C0A002F9E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C506166328508C0A002F9E3A;
+			remoteInfo = Artikulata;
+		};
+		C506168428508C0B002F9E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C506165C28508C0A002F9E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C506166328508C0A002F9E3A;
+			remoteInfo = Artikulata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C506166428508C0A002F9E3A /* Artikulata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artikulata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C506166728508C0A002F9E3A /* ArtikulataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataApp.swift; sourceTree = "<group>"; };
+		C506166928508C0A002F9E3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C506166B28508C0B002F9E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C506166E28508C0B002F9E3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C506167028508C0B002F9E3A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C506167328508C0B002F9E3A /* Artikulata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Artikulata.xcdatamodel; sourceTree = "<group>"; };
+		C506167928508C0B002F9E3A /* ArtikulataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtikulataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C506167D28508C0B002F9E3A /* ArtikulataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataTests.swift; sourceTree = "<group>"; };
+		C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtikulataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C506168728508C0B002F9E3A /* ArtikulataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITests.swift; sourceTree = "<group>"; };
+		C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C506166128508C0A002F9E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C506167628508C0B002F9E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C506168028508C0B002F9E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C506165B28508C0A002F9E3A = {
+			isa = PBXGroup;
+			children = (
+				C506166628508C0A002F9E3A /* Artikulata */,
+				C506167C28508C0B002F9E3A /* ArtikulataTests */,
+				C506168628508C0B002F9E3A /* ArtikulataUITests */,
+				C506166528508C0A002F9E3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C506166528508C0A002F9E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C506166428508C0A002F9E3A /* Artikulata.app */,
+				C506167928508C0B002F9E3A /* ArtikulataTests.xctest */,
+				C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C506166628508C0A002F9E3A /* Artikulata */ = {
+			isa = PBXGroup;
+			children = (
+				C506166728508C0A002F9E3A /* ArtikulataApp.swift */,
+				C506166928508C0A002F9E3A /* ContentView.swift */,
+				C506166B28508C0B002F9E3A /* Assets.xcassets */,
+				C506167028508C0B002F9E3A /* Persistence.swift */,
+				C506167228508C0B002F9E3A /* Artikulata.xcdatamodeld */,
+				C506166D28508C0B002F9E3A /* Preview Content */,
+			);
+			path = Artikulata;
+			sourceTree = "<group>";
+		};
+		C506166D28508C0B002F9E3A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C506166E28508C0B002F9E3A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C506167C28508C0B002F9E3A /* ArtikulataTests */ = {
+			isa = PBXGroup;
+			children = (
+				C506167D28508C0B002F9E3A /* ArtikulataTests.swift */,
+			);
+			path = ArtikulataTests;
+			sourceTree = "<group>";
+		};
+		C506168628508C0B002F9E3A /* ArtikulataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C506168728508C0B002F9E3A /* ArtikulataUITests.swift */,
+				C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */,
+			);
+			path = ArtikulataUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C506166328508C0A002F9E3A /* Artikulata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C506168D28508C0B002F9E3A /* Build configuration list for PBXNativeTarget "Artikulata" */;
+			buildPhases = (
+				C506166028508C0A002F9E3A /* Sources */,
+				C506166128508C0A002F9E3A /* Frameworks */,
+				C506166228508C0A002F9E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artikulata;
+			productName = Artikulata;
+			productReference = C506166428508C0A002F9E3A /* Artikulata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C506167828508C0B002F9E3A /* ArtikulataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C506169028508C0B002F9E3A /* Build configuration list for PBXNativeTarget "ArtikulataTests" */;
+			buildPhases = (
+				C506167528508C0B002F9E3A /* Sources */,
+				C506167628508C0B002F9E3A /* Frameworks */,
+				C506167728508C0B002F9E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C506167B28508C0B002F9E3A /* PBXTargetDependency */,
+			);
+			name = ArtikulataTests;
+			productName = ArtikulataTests;
+			productReference = C506167928508C0B002F9E3A /* ArtikulataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C506168228508C0B002F9E3A /* ArtikulataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C506169328508C0B002F9E3A /* Build configuration list for PBXNativeTarget "ArtikulataUITests" */;
+			buildPhases = (
+				C506167F28508C0B002F9E3A /* Sources */,
+				C506168028508C0B002F9E3A /* Frameworks */,
+				C506168128508C0B002F9E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C506168528508C0B002F9E3A /* PBXTargetDependency */,
+			);
+			name = ArtikulataUITests;
+			productName = ArtikulataUITests;
+			productReference = C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C506165C28508C0A002F9E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C506166328508C0A002F9E3A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C506167828508C0B002F9E3A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C506166328508C0A002F9E3A;
+					};
+					C506168228508C0B002F9E3A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C506166328508C0A002F9E3A;
+					};
+				};
+			};
+			buildConfigurationList = C506165F28508C0A002F9E3A /* Build configuration list for PBXProject "Artikulata" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C506165B28508C0A002F9E3A;
+			productRefGroup = C506166528508C0A002F9E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C506166328508C0A002F9E3A /* Artikulata */,
+				C506167828508C0B002F9E3A /* ArtikulataTests */,
+				C506168228508C0B002F9E3A /* ArtikulataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C506166228508C0A002F9E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
+				C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C506167728508C0B002F9E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C506168128508C0B002F9E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C506166028508C0A002F9E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C506167128508C0B002F9E3A /* Persistence.swift in Sources */,
+				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
+				C506166A28508C0A002F9E3A /* ContentView.swift in Sources */,
+				C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C506167528508C0B002F9E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C506167E28508C0B002F9E3A /* ArtikulataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C506167F28508C0B002F9E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */,
+				C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C506167B28508C0B002F9E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C506166328508C0A002F9E3A /* Artikulata */;
+			targetProxy = C506167A28508C0B002F9E3A /* PBXContainerItemProxy */;
+		};
+		C506168528508C0B002F9E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C506166328508C0A002F9E3A /* Artikulata */;
+			targetProxy = C506168428508C0B002F9E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C506168B28508C0B002F9E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C506168C28508C0B002F9E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C506168E28508C0B002F9E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C506168F28508C0B002F9E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C506169128508C0B002F9E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.ArtikulataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artikulata.app/Artikulata";
+			};
+			name = Debug;
+		};
+		C506169228508C0B002F9E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.ArtikulataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artikulata.app/Artikulata";
+			};
+			name = Release;
+		};
+		C506169428508C0B002F9E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.ArtikulataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artikulata;
+			};
+			name = Debug;
+		};
+		C506169528508C0B002F9E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.ArtikulataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artikulata;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C506165F28508C0A002F9E3A /* Build configuration list for PBXProject "Artikulata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C506168B28508C0B002F9E3A /* Debug */,
+				C506168C28508C0B002F9E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C506168D28508C0B002F9E3A /* Build configuration list for PBXNativeTarget "Artikulata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C506168E28508C0B002F9E3A /* Debug */,
+				C506168F28508C0B002F9E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C506169028508C0B002F9E3A /* Build configuration list for PBXNativeTarget "ArtikulataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C506169128508C0B002F9E3A /* Debug */,
+				C506169228508C0B002F9E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C506169328508C0B002F9E3A /* Build configuration list for PBXNativeTarget "ArtikulataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C506169428508C0B002F9E3A /* Debug */,
+				C506169528508C0B002F9E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C506167228508C0B002F9E3A /* Artikulata.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C506167328508C0B002F9E3A /* Artikulata.xcdatamodel */,
+			);
+			currentVersion = C506167328508C0B002F9E3A /* Artikulata.xcdatamodel */;
+			path = Artikulata.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C506165C28508C0A002F9E3A /* Project object */;
+}
