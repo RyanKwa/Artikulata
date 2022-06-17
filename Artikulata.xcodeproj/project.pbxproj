@@ -16,6 +16,9 @@
 		C506167E28508C0B002F9E3A /* ArtikulataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506167D28508C0B002F9E3A /* ArtikulataTests.swift */; };
 		C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168728508C0B002F9E3A /* ArtikulataUITests.swift */; };
 		C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */; };
+		DC7082A32858C8670033B3E9 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7082A22858C8670033B3E9 /* FredokaOne-Regular.ttf */; };
+		DC7082A62858ED370033B3E9 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7082A52858ED370033B3E9 /* FontView.swift */; };
+		DC7082A82858EFD30033B3E9 /* WordImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7082A72858EFD30033B3E9 /* WordImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtikulataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506168728508C0B002F9E3A /* ArtikulataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITests.swift; sourceTree = "<group>"; };
 		C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC70829F2858C7B50033B3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DC7082A22858C8670033B3E9 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		DC7082A52858ED370033B3E9 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
+		DC7082A72858EFD30033B3E9 /* WordImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,7 @@
 		C506165B28508C0A002F9E3A = {
 			isa = PBXGroup;
 			children = (
+				DC7082A02858C81E0033B3E9 /* Themes */,
 				C506166628508C0A002F9E3A /* Artikulata */,
 				C506167C28508C0B002F9E3A /* ArtikulataTests */,
 				C506168628508C0B002F9E3A /* ArtikulataUITests */,
@@ -98,6 +106,7 @@
 		C506166628508C0A002F9E3A /* Artikulata */ = {
 			isa = PBXGroup;
 			children = (
+				DC70829F2858C7B50033B3E9 /* Info.plist */,
 				C506166728508C0A002F9E3A /* ArtikulataApp.swift */,
 				C506166928508C0A002F9E3A /* ContentView.swift */,
 				C506166B28508C0B002F9E3A /* Assets.xcassets */,
@@ -131,6 +140,32 @@
 				C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */,
 			);
 			path = ArtikulataUITests;
+			sourceTree = "<group>";
+		};
+		DC7082A02858C81E0033B3E9 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				DC7082A12858C8370033B3E9 /* Font */,
+				DC7082A42858ECBF0033B3E9 /* UI */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		DC7082A12858C8370033B3E9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DC7082A22858C8670033B3E9 /* FredokaOne-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		DC7082A42858ECBF0033B3E9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DC7082A52858ED370033B3E9 /* FontView.swift */,
+				DC7082A72858EFD30033B3E9 /* WordImageView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +274,7 @@
 			files = (
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */,
+				DC7082A32858C8670033B3E9 /* FredokaOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +303,8 @@
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
 				C506166A28508C0A002F9E3A /* ContentView.swift in Sources */,
 				C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */,
+				DC7082A82858EFD30033B3E9 /* WordImageView.swift in Sources */,
+				DC7082A62858ED370033B3E9 /* FontView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +466,12 @@
 				DEVELOPMENT_TEAM = L2V23RWBGR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Artikulata/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,11 +496,12 @@
 				DEVELOPMENT_TEAM = L2V23RWBGR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Artikulata/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
