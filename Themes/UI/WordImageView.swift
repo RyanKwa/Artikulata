@@ -13,24 +13,25 @@ struct WordImageView: View {
     let imageText: String
     
     var body: some View {
-        VStack {
-            
             // masih perlu ditambahin isPressed event
             // bisa dikasih animation(.spring())
             Button {
                 print("button pressed") // action
             } label: {
-                Image(imageName)
+                VStack{
+                    Image(imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150, height: 150, alignment: .center)
+                    FontView(text: imageText, size: 26)
+                }
             }
             .buttonStyle(PlainButtonStyle())
-            
-            FontView(text: imageText, size: 26)
-        }
     }
 }
 
 struct WordImageView_Previews: PreviewProvider {
     static var previews: some View {
-        WordImageView(imageName: "test", imageText: "Test")
+        WordImageView(imageName: "Senang", imageText: "Senang")
     }
 }
