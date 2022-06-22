@@ -20,6 +20,16 @@
 		C506167E28508C0B002F9E3A /* ArtikulataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506167D28508C0B002F9E3A /* ArtikulataTests.swift */; };
 		C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168728508C0B002F9E3A /* ArtikulataUITests.swift */; };
 		C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */; };
+		C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */; };
+		C5AF21DE28630C00002AEAA7 /* KataSifatModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */; };
+		C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */; };
+		C5AF21E028630C00002AEAA7 /* KataKerjaModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DD28630C00002AEAA7 /* KataKerjaModel.mlmodel */; };
+		C5AF21E228630D0F002AEAA7 /* SoundAnalyzerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21E128630D0F002AEAA7 /* SoundAnalyzerObserver.swift */; };
+		C5AF21E628631098002AEAA7 /* VideoStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21E528631098002AEAA7 /* VideoStatusObserver.swift */; };
+		C5AF21E8286311BC002AEAA7 /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21E7286311BC002AEAA7 /* CompletionView.swift */; };
+		C5AF21EA2863449D002AEAA7 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21E92863449D002AEAA7 /* Words.swift */; };
+		C5AF21EC28634AD2002AEAA7 /* view-hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21EB28634AD2002AEAA7 /* view-hidden.swift */; };
+		C5AF21F0286354F9002AEAA7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21EF286354F9002AEAA7 /* Constant.swift */; };
 		DC7082A32858C8670033B3E9 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7082A22858C8670033B3E9 /* FredokaOne-Regular.ttf */; };
 		DC7082A62858ED370033B3E9 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7082A52858ED370033B3E9 /* FontView.swift */; };
 		DC7082A82858EFD30033B3E9 /* WordImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7082A72858EFD30033B3E9 /* WordImageView.swift */; };
@@ -70,6 +80,16 @@
 		C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtikulataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506168728508C0B002F9E3A /* ArtikulataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITests.swift; sourceTree = "<group>"; };
 		C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamManager.swift; sourceTree = "<group>"; };
+		C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataSifatModel.mlmodel; sourceTree = "<group>"; };
+		C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataBendaModel.mlmodel; sourceTree = "<group>"; };
+		C5AF21DD28630C00002AEAA7 /* KataKerjaModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataKerjaModel.mlmodel; sourceTree = "<group>"; };
+		C5AF21E128630D0F002AEAA7 /* SoundAnalyzerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAnalyzerObserver.swift; sourceTree = "<group>"; };
+		C5AF21E528631098002AEAA7 /* VideoStatusObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStatusObserver.swift; sourceTree = "<group>"; };
+		C5AF21E7286311BC002AEAA7 /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
+		C5AF21E92863449D002AEAA7 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		C5AF21EB28634AD2002AEAA7 /* view-hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "view-hidden.swift"; sourceTree = "<group>"; };
+		C5AF21EF286354F9002AEAA7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		DC70829F2858C7B50033B3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC7082A22858C8670033B3E9 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
 		DC7082A52858ED370033B3E9 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
@@ -144,6 +164,10 @@
 		C506166628508C0A002F9E3A /* Artikulata */ = {
 			isa = PBXGroup;
 			children = (
+				C5AF21F1286355FD002AEAA7 /* Utilities */,
+				C5AF21E428630E5A002AEAA7 /* Observers */,
+				C5AF21E328630E36002AEAA7 /* AudioStream */,
+				C5AF21DA28630BD8002AEAA7 /* MLModels */,
 				DCBB2F332861EE46002B353D /* Media */,
 				DC7082A02858C81E0033B3E9 /* Themes */,
 				DCBB2F382861F76D002B353D /* Views */,
@@ -180,6 +204,59 @@
 				C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */,
 			);
 			path = ArtikulataUITests;
+			sourceTree = "<group>";
+		};
+		C5AF21DA28630BD8002AEAA7 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */,
+				C5AF21DD28630C00002AEAA7 /* KataKerjaModel.mlmodel */,
+				C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		C5AF21E328630E36002AEAA7 /* AudioStream */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */,
+			);
+			path = AudioStream;
+			sourceTree = "<group>";
+		};
+		C5AF21E428630E5A002AEAA7 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF21E128630D0F002AEAA7 /* SoundAnalyzerObserver.swift */,
+				C5AF21E528631098002AEAA7 /* VideoStatusObserver.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		C5AF21F1286355FD002AEAA7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF21F428635722002AEAA7 /* Constants */,
+				C5AF21F328635631002AEAA7 /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C5AF21F328635631002AEAA7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF21EB28634AD2002AEAA7 /* view-hidden.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C5AF21F428635722002AEAA7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF21E92863449D002AEAA7 /* Words.swift */,
+				C5AF21EF286354F9002AEAA7 /* Constant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		DC7082A02858C81E0033B3E9 /* Themes */ = {
@@ -249,6 +326,7 @@
 				DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */,
 				C506166928508C0A002F9E3A /* ListWordView.swift */,
 				06799FF72863013A00B4FC7E /* ListCategories.swift */,
+				C5AF21E7286311BC002AEAA7 /* CompletionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -394,17 +472,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AF21E8286311BC002AEAA7 /* CompletionView.swift in Sources */,
 				C506167128508C0B002F9E3A /* Persistence.swift in Sources */,
 				06799FF6286300DF00B4FC7E /* ColorManager.swift in Sources */,
+				C5AF21E228630D0F002AEAA7 /* SoundAnalyzerObserver.swift in Sources */,
+				C5AF21E028630C00002AEAA7 /* KataKerjaModel.mlmodel in Sources */,
 				DCE19437285B916900673946 /* BackButtonView.swift in Sources */,
 				DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */,
 				06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */,
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
 				C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */,
+				C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */,
 				C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */,
+				C5AF21EC28634AD2002AEAA7 /* view-hidden.swift in Sources */,
+				C5AF21E628631098002AEAA7 /* VideoStatusObserver.swift in Sources */,
 				DC7082A82858EFD30033B3E9 /* WordImageView.swift in Sources */,
 				06799FF42863009800B4FC7E /* CategoriesButton.swift in Sources */,
 				DC7082A62858ED370033B3E9 /* FontView.swift in Sources */,
+				C5AF21EA2863449D002AEAA7 /* Words.swift in Sources */,
+				C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */,
+				C5AF21DE28630C00002AEAA7 /* KataSifatModel.mlmodel in Sources */,
+				C5AF21F0286354F9002AEAA7 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
