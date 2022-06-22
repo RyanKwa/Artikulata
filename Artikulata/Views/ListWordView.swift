@@ -62,7 +62,9 @@ struct ListWordView: View {
                             
                             WordImageView(imageName: "Makan", imageText: "Makan", word: Video.Makan)
                             
-                            WordImageView(imageName: "Minum", imageText: "Minum", word: Video.Minum)}
+                            WordImageView(imageName: "Minum", imageText: "Minum", word: Video.Minum)
+                            
+                        }
                     }
                     .padding(.top, 20)
                 }
