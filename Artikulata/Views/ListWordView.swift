@@ -35,11 +35,11 @@ struct ListWordView: View {
                     }
                     
                     HStack(spacing: 100) {
-                        WordImageView(imageName: "Senang", imageText: "Senang", word: Video.Senang)
+                        WordImageView(imageName: "Senang", imageText: "Senang", word: Words.Senang)
                         
-                        WordImageView(imageName: "Marah", imageText: "Marah", word: Video.Marah)
+                        WordImageView(imageName: "Marah", imageText: "Marah", word: Words.Marah)
                         
-                        WordImageView(imageName: "Sedih", imageText: "Sedih", word: Video.Sedih)
+                        WordImageView(imageName: "Sedih", imageText: "Sedih", word: Words.Sedih)
                     }
                     .padding(.top, 40)
                 }
