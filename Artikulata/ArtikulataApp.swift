@@ -13,7 +13,7 @@ struct ArtikulataApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ListWordView()
+            ListCategories()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
