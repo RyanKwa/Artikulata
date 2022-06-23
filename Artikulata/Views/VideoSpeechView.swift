@@ -90,8 +90,7 @@ struct AVPlayerControllerRepresented: UIViewControllerRepresentable {
 }
 
 enum Video: String, CaseIterable {
-//    case Kursi, Baju, Celana, Senang, Marah, Sedih, Makan, Minum, Tidur
-    case Senang, Marah, Sedih
+    case Kursi, Baju, Celana, Senang, Marah, Sedih, Makan, Minum, Tidur
 }
 
 struct VideoSpeechView_Previews: PreviewProvider {
