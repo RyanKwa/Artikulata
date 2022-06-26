@@ -12,27 +12,29 @@ struct ListCategories: View {
     var body: some View {
         //background color
         NavigationView {
-        ZStack {
-
-            Color.yellowPastel
-                .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                //tite
-                Text("Mau belajar apa hari ini?")
-                    .font(Font.custom("FredokaOne-Regular", size: 32))
-                    .multilineTextAlignment(.center)
-                    
-                Spacer()
-                    .frame(height: 35)
+            ZStack {
+                Color.yellowPastel
+                    .edgesIgnoringSafeArea(.all)
                 
-                //buttons of categories
-                HStack(alignment: .top, spacing: 27){
-                    CategoriesButton(buttonColor: Color.redPastel, categoriesName: "Kata Benda")
-                    CategoriesButton(buttonColor: Color.greenPastel, categoriesName: "Kata Sifat")
-                    CategoriesButton(buttonColor: Color.bluePastel, categoriesName: "Kata Kerja")
+                VStack {
+                    //title
+                    Text("Mau belajar apa hari ini?")
+                        .font(Font.custom("FredokaOne-Regular", size: 32))
+                        .multilineTextAlignment(.center)
+                        
+                    Spacer()
+                        .frame(height: 35)
+                    
+                    //buttons of categories
+                    HStack(alignment: .top, spacing: 27){
+                        CategoriesButton(categoriesImage: "Kata-benda", categoriesName: "Kata Benda")
+                        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: "Kata Sifat")
+                        CategoriesButton(categoriesImage: "Kata-kerja", categoriesName: "Kata Kerja")
                     }
+                    .padding(.top, 10)
                 }
+                .padding(.bottom, 30)
             }
         }
     }
