@@ -43,26 +43,26 @@ struct ListWordView: View {
                     
                     HStack(spacing: 100) {
                         if categoriesName == "Kata Sifat"{
-                            WordImageView(imageName: "Senang", imageText: "Senang", word: Video.Senang)
+                            WordImageView(imageName: "Senang", imageText: "Senang", word: Words.Senang)
                             
-                            WordImageView(imageName: "Marah", imageText: "Marah", word: Video.Marah)
+                            WordImageView(imageName: "Marah", imageText: "Marah", word: Words.Marah)
                             
-                            WordImageView(imageName: "Sedih", imageText: "Sedih", word: Video.Sedih)}
+                            WordImageView(imageName: "Sedih", imageText: "Sedih", word: Words.Sedih)}
                         
                         else if categoriesName == "Kata Benda"{
-                            WordImageView(imageName: "Baju", imageText: "Baju", word: Video.Baju)
+                            WordImageView(imageName: "Baju", imageText: "Baju", word: Words.Baju)
                             
-                            WordImageView(imageName: "Celana", imageText: "Celana", word: Video.Celana)
+                            WordImageView(imageName: "Celana", imageText: "Celana", word: Words.Celana)
                             
-                            WordImageView(imageName: "Kursi", imageText: "Kursi", word: Video.Kursi)}
+                            WordImageView(imageName: "Kursi", imageText: "Kursi", word: Words.Kursi)}
 
                         
                         else if categoriesName == "Kata Kerja"{
-                            WordImageView(imageName: "Tidur", imageText: "Tidur", word: Video.Tidur)
+                            WordImageView(imageName: "Tidur", imageText: "Tidur", word: Words.Tidur)
                             
-                            WordImageView(imageName: "Makan", imageText: "Makan", word: Video.Makan)
+                            WordImageView(imageName: "Makan", imageText: "Makan", word: Words.Makan)
                             
-                            WordImageView(imageName: "Minum", imageText: "Minum", word: Video.Minum)
+                            WordImageView(imageName: "Minum", imageText: "Minum", word: Words.Minum)
                             
                         }
                     }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVKit
+import Lottie
 
 struct VideoSpeechView: View {
     
@@ -65,13 +66,12 @@ struct VideoSpeechView: View {
                 VStack {
                     FontView(text: currentWordDisplay, size: 64)
                     
-                    // lottie animation
-                    
                     /// masih sementara
                     if readyToRecord() {
-                        Image(systemName: "music.mic")
-                            .font(.system(size: 64.0))
-                            .padding()
+
+                        LottieAnimationView(isPaused: true)
+                            .edgesIgnoringSafeArea(.all)
+                            .offset(x: -10, y: UIScreen.main.bounds.height/30)
                             .opacity(0.2)
                             .onReceive(videoStatusObserver.objectWillChange) { _ in
                                 guard isRecording == false else{
@@ -82,8 +82,9 @@ struct VideoSpeechView: View {
                             }
                     }
                     else{
-                        Image(systemName: "music.mic")
-                            .font(.system(size: 64.0))
+                        LottieAnimationView(isPaused: false)
+                            .edgesIgnoringSafeArea(.all)
+                            .offset(x: -10, y: UIScreen.main.bounds.height/30)
                             .opacity(1)
                             .onReceive(timer) { _ in
                                 guard isRecording == true else{
@@ -107,22 +108,22 @@ struct VideoSpeechView: View {
                                         self.videoStatusObserver.willStartPlaying = true
                                     }
                                 }
-                                
+
                                 else if duration <= Constant.MAX_DURATION {
                                     duration += 1
                                 }
-                                
+
                                 /// kalau benar pindah
                                 if soundAnalyzerObserver.navigateToNextView {
                                     audioManager.stopLiveAudio()
                                     stopTimer()
                                 }
-                                
+
                                 if numberOfTries == Constant.MAX_TRIES {
                                     audioManager.stopLiveAudio()
                                     stopTimer()
                                 }
-                                
+
                             }
                             .background{
 
@@ -178,10 +179,7 @@ struct VideoSpeechView: View {
         self.duration = 0
         self.recordCycleFinished = false
     }
-
 }
-
-
 
 struct AVPlayerControllerRepresented: UIViewControllerRepresentable {
     var player : AVPlayer
