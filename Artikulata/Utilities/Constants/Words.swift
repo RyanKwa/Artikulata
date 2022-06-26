@@ -8,7 +8,7 @@
 import Foundation
 
 enum Words: String, CaseIterable {
-    case Kursi
+    case Bangku
     case Baju
     case Celana
     case Senang

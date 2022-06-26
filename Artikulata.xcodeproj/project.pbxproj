@@ -40,8 +40,11 @@
 		DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C582862D7A200B5482F /* Bangku.MOV */; };
 		DCAA1C5C2862D7A200B5482F /* Celana.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C592862D7A200B5482F /* Celana.MOV */; };
 		DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C5D2862D7B400B5482F /* Minum.MOV */; };
-		DCAA1C612862D7CC00B5482F /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C5F2862D7CC00B5482F /* Tidur.MOV */; };
 		DCAA1C622862D7CC00B5482F /* Makan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C602862D7CC00B5482F /* Makan.MOV */; };
+		DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */; };
+		DCAA1CC52867861900B5482F /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CC42867861900B5482F /* Microphone.json */; };
+		DCAA1CC82867868F00B5482F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA1CC72867868F00B5482F /* Lottie */; };
+		DCAA1CCC28684DCB00B5482F /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CCB28684DCB00B5482F /* Tidur.MOV */; };
 		DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */; };
 		DCE19437285B916900673946 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE19436285B916900673946 /* BackButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -101,8 +104,10 @@
 		DCAA1C582862D7A200B5482F /* Bangku.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Bangku.MOV; sourceTree = "<group>"; };
 		DCAA1C592862D7A200B5482F /* Celana.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Celana.MOV; sourceTree = "<group>"; };
 		DCAA1C5D2862D7B400B5482F /* Minum.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Minum.MOV; sourceTree = "<group>"; };
-		DCAA1C5F2862D7CC00B5482F /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Tidur.MOV; sourceTree = "<group>"; };
 		DCAA1C602862D7CC00B5482F /* Makan.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Makan.MOV; sourceTree = "<group>"; };
+		DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		DCAA1CC42867861900B5482F /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Microphone.json; path = ../../../../Test/Asset/Lottie/Microphone.json; sourceTree = "<group>"; };
+		DCAA1CCB28684DCB00B5482F /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Tidur.MOV; path = ../../../../../../Desktop/Tidur.MOV; sourceTree = "<group>"; };
 		DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSpeechView.swift; sourceTree = "<group>"; };
 		DCE19436285B916900673946 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAA1CC82867868F00B5482F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +294,19 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		DCAA1C9C28676DCE00B5482F /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA1CC42867861900B5482F /* Microphone.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		DCBB2F332861EE46002B353D /* Media */ = {
 			isa = PBXGroup;
 			children = (
 				DCBB2F372861EE63002B353D /* Audio */,
+				DCAA1C9C28676DCE00B5482F /* Lottie */,
 				DCBB2F342861EE4D002B353D /* Video */,
 			);
 			path = Media;
@@ -304,7 +319,7 @@
 				DCAA1C512862D56000B5482F /* Sedih.MOV */,
 				DCAA1C532862D56600B5482F /* Senang.MOV */,
 				DCAA1C602862D7CC00B5482F /* Makan.MOV */,
-				DCAA1C5F2862D7CC00B5482F /* Tidur.MOV */,
+				DCAA1CCB28684DCB00B5482F /* Tidur.MOV */,
 				DCAA1C572862D7A200B5482F /* Baju.MOV */,
 				DCAA1C582862D7A200B5482F /* Bangku.MOV */,
 				DCAA1C592862D7A200B5482F /* Celana.MOV */,
@@ -327,6 +342,7 @@
 				C506166928508C0A002F9E3A /* ListWordView.swift */,
 				06799FF72863013A00B4FC7E /* ListCategories.swift */,
 				C5AF21E7286311BC002AEAA7 /* CompletionView.swift */,
+				DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,6 +363,9 @@
 			dependencies = (
 			);
 			name = Artikulata;
+			packageProductDependencies = (
+				DCAA1CC72867868F00B5482F /* Lottie */,
+			);
 			productName = Artikulata;
 			productReference = C506166428508C0A002F9E3A /* Artikulata.app */;
 			productType = "com.apple.product-type.application";
@@ -419,6 +438,9 @@
 				Base,
 			);
 			mainGroup = C506165B28508C0A002F9E3A;
+			packageReferences = (
+				DCAA1CC62867868F00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = C506166528508C0A002F9E3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,14 +462,15 @@
 				06799FF22863000900B4FC7E /* Colors.xcassets in Resources */,
 				DCAA1C5C2862D7A200B5482F /* Celana.MOV in Resources */,
 				DCAA1C542862D56600B5482F /* Senang.MOV in Resources */,
+				DCAA1CC52867861900B5482F /* Microphone.json in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,
 				DCAA1C522862D56000B5482F /* Sedih.MOV in Resources */,
 				C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */,
 				DCAA1C562862D6A700B5482F /* Marah.MOV in Resources */,
-				DCAA1C612862D7CC00B5482F /* Tidur.MOV in Resources */,
 				DC7082A32858C8670033B3E9 /* FredokaOne-Regular.ttf in Resources */,
+				DCAA1CCC28684DCB00B5482F /* Tidur.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +499,7 @@
 				C506167128508C0B002F9E3A /* Persistence.swift in Sources */,
 				06799FF6286300DF00B4FC7E /* ColorManager.swift in Sources */,
 				C5AF21E228630D0F002AEAA7 /* SoundAnalyzerObserver.swift in Sources */,
+				DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */,
 				C5AF21E028630C00002AEAA7 /* KataKerjaModel.mlmodel in Sources */,
 				DCE19437285B916900673946 /* BackButtonView.swift in Sources */,
 				DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */,
@@ -650,6 +674,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
 				DEVELOPMENT_TEAM = L2V23RWBGR;
 				ENABLE_PREVIEWS = YES;
@@ -680,6 +705,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
 				DEVELOPMENT_TEAM = L2V23RWBGR;
 				ENABLE_PREVIEWS = YES;
@@ -819,6 +845,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCAA1CC62867868F00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCAA1CC72867868F00B5482F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCAA1CC62867868F00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C506167228508C0B002F9E3A /* Artikulata.xcdatamodeld */ = {
