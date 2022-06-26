@@ -25,8 +25,6 @@ struct ListWordView: View {
                 }
                 else if (categoriesName == "Kata Kerja"){
                     Background(backgroundImage: "BG-kata-kerja")}
-
-
                 
                 VStack{
                     
@@ -54,7 +52,7 @@ struct ListWordView: View {
                             
                             WordImageView(imageName: "Celana", imageText: "Celana", word: Words.Celana)
                             
-                            WordImageView(imageName: "Kursi", imageText: "Kursi", word: Words.Kursi)}
+                            WordImageView(imageName: "Bangku", imageText: "Bangku", word: Words.Bangku)}
 
                         
                         else if categoriesName == "Kata Kerja"{
