@@ -10,6 +10,7 @@ import SwiftUI
 struct ListWordView: View {
     @State var isActive: Bool = false
     @State var word: String = "Marah"
+    @Environment(\.presentationMode) var presentation
     
     var categoriesName : String
 
@@ -19,18 +20,35 @@ struct ListWordView: View {
             ZStack {
                 
                 if (categoriesName == "Kata Benda") {
-                    Background(backgroundImage: "BG-kata-benda")}
+                    Background(backgroundImage: "BG-kata-benda")
+                }
                 else if (categoriesName == "Kata Sifat"){
                     Background(backgroundImage: "BG-kata-sifat")
                 }
                 else if (categoriesName == "Kata Kerja"){
-                    Background(backgroundImage: "BG-kata-kerja")}
+                    Background(backgroundImage: "BG-kata-kerja")
+                }
                 
                 VStack{
                     
                     HStack {
                         
-                        BackButtonView()
+                        // custom back button
+                        Button(action: {
+                            self.presentation.wrappedValue.dismiss()
+                        }){
+                            Circle()
+                                .fill(Color(red: 0.58, green: 0.45, blue: 0.49))
+                                .frame(width: 50, height: 50, alignment: .center)
+                                .overlay(
+                                    Image(systemName: "chevron.backward")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 18, height: 28, alignment: .leading)
+                                        .foregroundColor(.white)
+                                )
+                        }
+                        .buttonStyle(PlainButtonStyle())
                         
                         Spacer()
                         
@@ -66,14 +84,11 @@ struct ListWordView: View {
                     }
                     .padding(.top, 20)
                 }
-                .padding(.bottom, 60)
+                .padding(.bottom, 30)
             }
         }
     }
 }
-
-//Hello wkwkwkkwkw
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -81,16 +96,3 @@ struct ContentView_Previews: PreviewProvider {
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
-
-struct Background : View {
-    var backgroundImage : String = "BG-kata-sifat"
-    
-    var body: some View {
-        Image(backgroundImage)
-            .resizable()
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-    }
-}
-
-
-

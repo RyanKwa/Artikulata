@@ -27,8 +27,8 @@ struct LottieAnimationView: UIViewRepresentable {
         view.addSubview(animationView)
 
         NSLayoutConstraint.activate([
-            animationView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            animationView.widthAnchor.constraint(equalToConstant: 350),
+            animationView.heightAnchor.constraint(equalToConstant: 275),
         ])
 
         return view
@@ -58,5 +58,6 @@ struct LottieAnimationView: UIViewRepresentable {
 struct LottieAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         LottieAnimationView(isPaused: false)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

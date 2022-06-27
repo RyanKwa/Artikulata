@@ -31,8 +31,8 @@ struct CategoriesButton: View {
         .buttonStyle(PlainButtonStyle())
         .background(
             
-                NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarBackButtonHidden(true), isActive: $isActive){
-                }.hidden()
+            NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive){
+            }.hidden()
             
         )
         

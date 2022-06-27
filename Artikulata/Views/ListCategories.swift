@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ListCategories: View {
+    
     var body: some View {
         //background color
         NavigationView {

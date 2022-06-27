@@ -11,12 +11,14 @@ import Lottie
 
 struct VideoSpeechView: View {
     
+    @Environment(\.presentationMode) var presentation
+    
     @ObservedObject var soundAnalyzerObserver: SoundAnalyzerObserver
     @ObservedObject var videoStatusObserver: VideoStatusObserver
     
     @State private var widthSize: CGFloat = UIScreen.main.bounds.size.width
     @State private var heightSize: CGFloat = UIScreen.main.bounds.size.height
-    @State private var videoPlayer: AVPlayer
+    @State var isActive: Bool = false
     
     @State var isRecording = false
     @State var recordCycleFinished = false
@@ -24,6 +26,7 @@ struct VideoSpeechView: View {
     @State var numberOfTries = 0
     @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    private var videoPlayer: AVPlayer
     var currentWordDisplay: String
     private var audioManager: AudioStreamManager
     
@@ -41,7 +44,7 @@ struct VideoSpeechView: View {
         
         ZStack {
             
-            Color("yellow-pastel")
+            Color.yellowPastel
                 .edgesIgnoringSafeArea(.all)
             
             HStack {
@@ -65,13 +68,14 @@ struct VideoSpeechView: View {
                 
                 VStack {
                     FontView(text: currentWordDisplay, size: 64)
+                        .offset(x: 0, y: 40)
                     
                     /// masih sementara
                     if readyToRecord() {
 
                         LottieAnimationView(isPaused: true)
                             .edgesIgnoringSafeArea(.all)
-                            .offset(x: -10, y: UIScreen.main.bounds.height/30)
+                            .offset(x: -25, y: UIScreen.main.bounds.height/30-13)
                             .opacity(0.2)
                             .onReceive(videoStatusObserver.objectWillChange) { _ in
                                 guard isRecording == false else{
@@ -84,7 +88,7 @@ struct VideoSpeechView: View {
                     else{
                         LottieAnimationView(isPaused: false)
                             .edgesIgnoringSafeArea(.all)
-                            .offset(x: -10, y: UIScreen.main.bounds.height/30)
+                            .offset(x: -25, y: UIScreen.main.bounds.height/30-13)
                             .opacity(1)
                             .onReceive(timer) { _ in
                                 guard isRecording == true else{
@@ -136,6 +140,31 @@ struct VideoSpeechView: View {
                 
                 Spacer()
             }
+            
+            // custom back button
+            Button(action: {
+                self.presentation.wrappedValue.dismiss()
+            }){
+                Circle()
+                    .fill(Color(red: 0.58, green: 0.45, blue: 0.49))
+                    .frame(width: 50, height: 50, alignment: .center)
+                    .overlay(
+                        Image(systemName: "chevron.backward")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 28, alignment: .leading)
+                            .foregroundColor(.white)
+                    )
+            }
+            .buttonStyle(PlainButtonStyle())
+            .position(x: widthSize/50, y: heightSize/6)
+            .onDisappear(){
+                self.videoPlayer.pause()
+                self.videoPlayer.seek(to: .zero)
+                stopTimer()
+            }
+            
+            // replay button
             Button(action: {
                 replayVideo()
                 stopTimer()
@@ -154,7 +183,6 @@ struct VideoSpeechView: View {
                             .frame(width: 18, height: 28, alignment: .center)
                             .foregroundColor(.white)
                     )
-                
             }
             .buttonStyle(PlainButtonStyle())
             .position(x: widthSize/4-30, y: heightSize/2-20)

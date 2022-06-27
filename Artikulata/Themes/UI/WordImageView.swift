@@ -16,10 +16,10 @@ struct WordImageView: View {
     var word: Words
     
     var body: some View {
-            // masih perlu ditambahin isPressed event
-            // bisa dikasih animation(.spring())
+
             Button {
                 self.isActive = true
+                
             } label: {
                 VStack{
                     Image(imageName)
@@ -31,7 +31,7 @@ struct WordImageView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .background(
-                NavigationLink(destination: VideoSpeechView(video: word).navigationBarBackButtonHidden(true), isActive: $isActive) {
+                NavigationLink(destination: VideoSpeechView(video: word).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive) {
                 }
                 .hidden()
             )
