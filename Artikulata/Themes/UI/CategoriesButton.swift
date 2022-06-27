@@ -23,7 +23,6 @@ struct CategoriesButton: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 221, height: 166)
                     .cornerRadius(20)
-
                 FontView(text: categoriesName.rawValue, size: 26)
             }
         }
