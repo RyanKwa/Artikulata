@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct CategoriesButton: View {
-    var buttonColor : Color
+    var categoriesImage : String
     var categoriesName : String
     
     @State var isActive = false
-    
-    
     
     var body: some View {
     
@@ -21,17 +19,20 @@ struct CategoriesButton: View {
             self.isActive = true
         } label: {
             VStack {
-                RoundedRectangle(cornerRadius: 27)
-                    .fill(buttonColor)
-                    .frame(minWidth: 0, maxWidth: 222, minHeight: 166,maxHeight: 166)
+                Image(categoriesImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 221, height: 166)
+                    .cornerRadius(20)
+
                 FontView(text: categoriesName, size: 26)
             }
         }
         .buttonStyle(PlainButtonStyle())
         .background(
             
-                NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarBackButtonHidden(true), isActive: $isActive){
-                }.hidden()
+            NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive){
+            }.hidden()
             
         )
         
@@ -40,7 +41,7 @@ struct CategoriesButton: View {
 
 struct CategoriesButton_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesButton(buttonColor: Color.greenPastel, categoriesName: "Kata Sifat")
+        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: "Kata Sifat")
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

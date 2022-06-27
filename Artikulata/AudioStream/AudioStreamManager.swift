@@ -81,6 +81,7 @@ class AudioStreamManager {
             print("ERROR: Mic input format unavailable")
             return
         }
+        audioEngine.inputNode.removeTap(onBus: inputBus)
         audioEngine.inputNode.installTap(onBus: inputBus, bufferSize: 1024, format: micInputFormat) {
             [unowned self] (buffer, time) in
             DispatchQueue.global(qos: .userInitiated).async {

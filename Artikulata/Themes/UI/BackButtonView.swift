@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct BackButtonView: View {
+    
     var body: some View {
+        
         Button(action: {
-            // action
+            
         }){
             Circle()
                 .fill(Color(red: 0.58, green: 0.45, blue: 0.49))
@@ -22,7 +24,8 @@ struct BackButtonView: View {
                         .frame(width: 18, height: 28, alignment: .leading)
                         .foregroundColor(.white)
                 )
-        }.buttonStyle(PlainButtonStyle())
+        }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
