@@ -14,6 +14,7 @@ struct WordImageView: View {
     
     @State var isActive = false
     var word: Words
+    var wordCategory: WordCategories
     
     var body: some View {
             // masih perlu ditambahin isPressed event
@@ -40,6 +41,6 @@ struct WordImageView: View {
 
 struct WordImageView_Previews: PreviewProvider {
     static var previews: some View {
-        WordImageView(imageName: "Senang", imageText: "Senang", word: Words.Senang)
+        WordImageView(imageName: "Senang", imageText: "Senang", word: Words.Senang, wordCategory: WordCategories.KataSifat)
     }
 }

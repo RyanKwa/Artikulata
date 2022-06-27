@@ -28,9 +28,9 @@ struct ListCategories: View {
                 
                 //buttons of categories
                 HStack(alignment: .top, spacing: 27){
-                    CategoriesButton(buttonColor: Color.redPastel, categoriesName: "Kata Benda")
-                    CategoriesButton(buttonColor: Color.greenPastel, categoriesName: "Kata Sifat")
-                    CategoriesButton(buttonColor: Color.bluePastel, categoriesName: "Kata Kerja")
+                    CategoriesButton(buttonColor: Color.redPastel, categoriesName: WordCategories.KataBenda)
+                    CategoriesButton(buttonColor: Color.greenPastel, categoriesName: WordCategories.KataSifat)
+                    CategoriesButton(buttonColor: Color.bluePastel, categoriesName: WordCategories.KataKerja)
                     }
                 }
             }

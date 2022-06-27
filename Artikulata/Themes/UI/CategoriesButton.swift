@@ -9,14 +9,13 @@ import SwiftUI
 
 struct CategoriesButton: View {
     var buttonColor : Color
-    var categoriesName : String
+    var categoriesName : WordCategories
     
     @State var isActive = false
     
     
     
     var body: some View {
-    
         Button {
             self.isActive = true
         } label: {
@@ -24,14 +23,14 @@ struct CategoriesButton: View {
                 RoundedRectangle(cornerRadius: 27)
                     .fill(buttonColor)
                     .frame(minWidth: 0, maxWidth: 222, minHeight: 166,maxHeight: 166)
-                FontView(text: categoriesName, size: 26)
+                FontView(text: categoriesName.rawValue, size: 26)
             }
         }
         .buttonStyle(PlainButtonStyle())
         .background(
-            
-                NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarBackButtonHidden(true), isActive: $isActive){
+            NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarBackButtonHidden(true), isActive: $isActive){
                 }.hidden()
+        
             
         )
         
@@ -40,7 +39,7 @@ struct CategoriesButton: View {
 
 struct CategoriesButton_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesButton(buttonColor: Color.greenPastel, categoriesName: "Kata Sifat")
+        CategoriesButton(buttonColor: Color.greenPastel, categoriesName: WordCategories.KataSifat)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
