@@ -28,7 +28,7 @@ struct LottieAnimationView: UIViewRepresentable {
 
         NSLayoutConstraint.activate([
             animationView.widthAnchor.constraint(equalToConstant: 350),
-            animationView.heightAnchor.constraint(equalToConstant: 275),
+            animationView.heightAnchor.constraint(equalToConstant: 280),
         ])
 
         return view

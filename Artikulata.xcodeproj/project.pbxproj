@@ -42,10 +42,10 @@
 		DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C5D2862D7B400B5482F /* Minum.MOV */; };
 		DCAA1C622862D7CC00B5482F /* Makan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C602862D7CC00B5482F /* Makan.MOV */; };
 		DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */; };
-		DCAA1CC52867861900B5482F /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CC42867861900B5482F /* Microphone.json */; };
 		DCAA1CC82867868F00B5482F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA1CC72867868F00B5482F /* Lottie */; };
 		DCAA1CCE2868B0B000B5482F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1CCD2868B0B000B5482F /* Background.swift */; };
 		DCAA1CD0286977B700B5482F /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CCF286977B600B5482F /* Tidur.MOV */; };
+		DCAA1CD62869F46300B5482F /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CD52869F46300B5482F /* Microphone.json */; };
 		DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */; };
 		DCE19437285B916900673946 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE19436285B916900673946 /* BackButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -107,9 +107,9 @@
 		DCAA1C5D2862D7B400B5482F /* Minum.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Minum.MOV; sourceTree = "<group>"; };
 		DCAA1C602862D7CC00B5482F /* Makan.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Makan.MOV; sourceTree = "<group>"; };
 		DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
-		DCAA1CC42867861900B5482F /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Microphone.json; path = ../../../../Test/Asset/Lottie/Microphone.json; sourceTree = "<group>"; };
 		DCAA1CCD2868B0B000B5482F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		DCAA1CCF286977B600B5482F /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Tidur.MOV; path = ../../../../../../Desktop/Tidur.MOV; sourceTree = "<group>"; };
+		DCAA1CD52869F46300B5482F /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Microphone.json; path = ../../../../../../Desktop/Microphone.json; sourceTree = "<group>"; };
 		DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSpeechView.swift; sourceTree = "<group>"; };
 		DCE19436285B916900673946 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,7 +300,7 @@
 		DCAA1C9C28676DCE00B5482F /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				DCAA1CC42867861900B5482F /* Microphone.json */,
+				DCAA1CD52869F46300B5482F /* Microphone.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -465,7 +465,7 @@
 				06799FF22863000900B4FC7E /* Colors.xcassets in Resources */,
 				DCAA1C5C2862D7A200B5482F /* Celana.MOV in Resources */,
 				DCAA1C542862D56600B5482F /* Senang.MOV in Resources */,
-				DCAA1CC52867861900B5482F /* Microphone.json in Resources */,
+				DCAA1CD62869F46300B5482F /* Microphone.json in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,

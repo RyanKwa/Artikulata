@@ -67,15 +67,16 @@ struct VideoSpeechView: View {
                 Spacer()
                 
                 VStack {
-                    FontView(text: currentWordDisplay, size: 64)
-                        .offset(x: 0, y: 40)
                     
+                    FontView(text: currentWordDisplay, size: 64)
+                        .offset(x: 0, y: 35)
+
                     /// masih sementara
                     if readyToRecord() {
 
                         LottieAnimationView(isPaused: true)
                             .edgesIgnoringSafeArea(.all)
-                            .offset(x: -25, y: UIScreen.main.bounds.height/30-13)
+                            .offset(x: -25, y: heightSize/30-18)
                             .opacity(0.2)
                             .onReceive(videoStatusObserver.objectWillChange) { _ in
                                 guard isRecording == false else{
@@ -88,7 +89,7 @@ struct VideoSpeechView: View {
                     else{
                         LottieAnimationView(isPaused: false)
                             .edgesIgnoringSafeArea(.all)
-                            .offset(x: -25, y: UIScreen.main.bounds.height/30-13)
+                            .offset(x: -25, y: heightSize/30-18)
                             .opacity(1)
                             .onReceive(timer) { _ in
                                 guard isRecording == true else{
