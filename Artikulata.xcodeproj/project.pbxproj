@@ -21,8 +21,8 @@
 		C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168728508C0B002F9E3A /* ArtikulataUITests.swift */; };
 		C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */; };
 		C55E67CE2869B42700C7135C /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C55E67CD2869B42700C7135C /* Tidur.MOV */; };
-		C55E67D02869B43000C7135C /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = C55E67CF2869B43000C7135C /* Microphone.json */; };
 		C55E67D22869B43D00C7135C /* WordCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D12869B43D00C7135C /* WordCategories.swift */; };
+		C55E67D9286A04AD00C7135C /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D8286A04AD00C7135C /* Background.swift */; };
 		C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */; };
 		C5AF21DE28630C00002AEAA7 /* KataSifatModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */; };
 		C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */; };
@@ -85,8 +85,8 @@
 		C506168728508C0B002F9E3A /* ArtikulataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITests.swift; sourceTree = "<group>"; };
 		C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C55E67CD2869B42700C7135C /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Tidur.MOV; sourceTree = "<group>"; };
-		C55E67CF2869B43000C7135C /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Microphone.json; path = ../../../../../../../../../Downloads/Microphone.json; sourceTree = "<group>"; };
 		C55E67D12869B43D00C7135C /* WordCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategories.swift; sourceTree = "<group>"; };
+		C55E67D8286A04AD00C7135C /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamManager.swift; sourceTree = "<group>"; };
 		C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataSifatModel.mlmodel; sourceTree = "<group>"; };
 		C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataBendaModel.mlmodel; sourceTree = "<group>"; };
@@ -289,11 +289,11 @@
 		DC7082A42858ECBF0033B3E9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C55E67D8286A04AD00C7135C /* Background.swift */,
 				DC7082A52858ED370033B3E9 /* FontView.swift */,
 				DC7082A72858EFD30033B3E9 /* WordImageView.swift */,
 				DCE19436285B916900673946 /* BackButtonView.swift */,
 				06799FF32863009800B4FC7E /* CategoriesButton.swift */,
-				DCAA1CCD2868B0B000B5482F /* Background.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -301,7 +301,6 @@
 		DCAA1C9C28676DCE00B5482F /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				DCAA1CD52869F46300B5482F /* Microphone.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -466,7 +465,6 @@
 				06799FF22863000900B4FC7E /* Colors.xcassets in Resources */,
 				DCAA1C5C2862D7A200B5482F /* Celana.MOV in Resources */,
 				DCAA1C542862D56600B5482F /* Senang.MOV in Resources */,
-				DCAA1CD62869F46300B5482F /* Microphone.json in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,
@@ -510,10 +508,10 @@
 				06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */,
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
 				C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */,
+				C55E67D9286A04AD00C7135C /* Background.swift in Sources */,
 				C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */,
 				C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */,
 				C5AF21EC28634AD2002AEAA7 /* view-hidden.swift in Sources */,
-				DCAA1CCE2868B0B000B5482F /* Background.swift in Sources */,
 				C5AF21E628631098002AEAA7 /* VideoStatusObserver.swift in Sources */,
 				DC7082A82858EFD30033B3E9 /* WordImageView.swift in Sources */,
 				06799FF42863009800B4FC7E /* CategoriesButton.swift in Sources */,
