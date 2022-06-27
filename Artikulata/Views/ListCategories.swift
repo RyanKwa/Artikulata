@@ -29,9 +29,9 @@ struct ListCategories: View {
                     
                     //buttons of categories
                     HStack(alignment: .top, spacing: 27){
-                        CategoriesButton(categoriesImage: "Kata-benda", categoriesName: "Kata Benda")
-                        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: "Kata Sifat")
-                        CategoriesButton(categoriesImage: "Kata-kerja", categoriesName: "Kata Kerja")
+                        CategoriesButton(categoriesImage: "Kata-benda", categoriesName: WordCategories.KataBenda)
+                        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: WordCategories.KataSifat)
+                        CategoriesButton(categoriesImage: "Kata-kerja", categoriesName: WordCategories.KataKerja)
                     }
                     .padding(.top, 10)
                 }

@@ -20,6 +20,10 @@
 		C506167E28508C0B002F9E3A /* ArtikulataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506167D28508C0B002F9E3A /* ArtikulataTests.swift */; };
 		C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168728508C0B002F9E3A /* ArtikulataUITests.swift */; };
 		C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */; };
+		C55E67CE2869B42700C7135C /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C55E67CD2869B42700C7135C /* Tidur.MOV */; };
+		C55E67D22869B43D00C7135C /* WordCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D12869B43D00C7135C /* WordCategories.swift */; };
+		C55E67D9286A04AD00C7135C /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D8286A04AD00C7135C /* Background.swift */; };
+		C55E67DB286A051100C7135C /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = C55E67DA286A051100C7135C /* Microphone.json */; };
 		C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */; };
 		C5AF21DE28630C00002AEAA7 /* KataSifatModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */; };
 		C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */; };
@@ -43,9 +47,6 @@
 		DCAA1C622862D7CC00B5482F /* Makan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C602862D7CC00B5482F /* Makan.MOV */; };
 		DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */; };
 		DCAA1CC82867868F00B5482F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA1CC72867868F00B5482F /* Lottie */; };
-		DCAA1CCE2868B0B000B5482F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1CCD2868B0B000B5482F /* Background.swift */; };
-		DCAA1CD0286977B700B5482F /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CCF286977B600B5482F /* Tidur.MOV */; };
-		DCAA1CD62869F46300B5482F /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CD52869F46300B5482F /* Microphone.json */; };
 		DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */; };
 		DCE19437285B916900673946 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE19436285B916900673946 /* BackButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,10 @@
 		C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtikulataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506168728508C0B002F9E3A /* ArtikulataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITests.swift; sourceTree = "<group>"; };
 		C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C55E67CD2869B42700C7135C /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Tidur.MOV; sourceTree = "<group>"; };
+		C55E67D12869B43D00C7135C /* WordCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategories.swift; sourceTree = "<group>"; };
+		C55E67D8286A04AD00C7135C /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		C55E67DA286A051100C7135C /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Microphone.json; sourceTree = "<group>"; };
 		C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamManager.swift; sourceTree = "<group>"; };
 		C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataSifatModel.mlmodel; sourceTree = "<group>"; };
 		C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataBendaModel.mlmodel; sourceTree = "<group>"; };
@@ -107,9 +112,6 @@
 		DCAA1C5D2862D7B400B5482F /* Minum.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Minum.MOV; sourceTree = "<group>"; };
 		DCAA1C602862D7CC00B5482F /* Makan.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Makan.MOV; sourceTree = "<group>"; };
 		DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
-		DCAA1CCD2868B0B000B5482F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		DCAA1CCF286977B600B5482F /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Tidur.MOV; path = ../../../../../../Desktop/Tidur.MOV; sourceTree = "<group>"; };
-		DCAA1CD52869F46300B5482F /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Microphone.json; path = ../../../../../../Desktop/Microphone.json; sourceTree = "<group>"; };
 		DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSpeechView.swift; sourceTree = "<group>"; };
 		DCE19436285B916900673946 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,6 +265,7 @@
 			children = (
 				C5AF21E92863449D002AEAA7 /* Words.swift */,
 				C5AF21EF286354F9002AEAA7 /* Constant.swift */,
+				C55E67D12869B43D00C7135C /* WordCategories.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -288,11 +291,11 @@
 		DC7082A42858ECBF0033B3E9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C55E67D8286A04AD00C7135C /* Background.swift */,
 				DC7082A52858ED370033B3E9 /* FontView.swift */,
 				DC7082A72858EFD30033B3E9 /* WordImageView.swift */,
 				DCE19436285B916900673946 /* BackButtonView.swift */,
 				06799FF32863009800B4FC7E /* CategoriesButton.swift */,
-				DCAA1CCD2868B0B000B5482F /* Background.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -300,7 +303,7 @@
 		DCAA1C9C28676DCE00B5482F /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				DCAA1CD52869F46300B5482F /* Microphone.json */,
+				C55E67DA286A051100C7135C /* Microphone.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -319,10 +322,10 @@
 			isa = PBXGroup;
 			children = (
 				DCAA1C552862D6A700B5482F /* Marah.MOV */,
+				C55E67CD2869B42700C7135C /* Tidur.MOV */,
 				DCAA1C512862D56000B5482F /* Sedih.MOV */,
 				DCAA1C532862D56600B5482F /* Senang.MOV */,
 				DCAA1C602862D7CC00B5482F /* Makan.MOV */,
-				DCAA1CCF286977B600B5482F /* Tidur.MOV */,
 				DCAA1C572862D7A200B5482F /* Baju.MOV */,
 				DCAA1C582862D7A200B5482F /* Bangku.MOV */,
 				DCAA1C592862D7A200B5482F /* Celana.MOV */,
@@ -465,15 +468,15 @@
 				06799FF22863000900B4FC7E /* Colors.xcassets in Resources */,
 				DCAA1C5C2862D7A200B5482F /* Celana.MOV in Resources */,
 				DCAA1C542862D56600B5482F /* Senang.MOV in Resources */,
-				DCAA1CD62869F46300B5482F /* Microphone.json in Resources */,
+				C55E67DB286A051100C7135C /* Microphone.json in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,
 				DCAA1C522862D56000B5482F /* Sedih.MOV in Resources */,
+				C55E67CE2869B42700C7135C /* Tidur.MOV in Resources */,
 				C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */,
 				DCAA1C562862D6A700B5482F /* Marah.MOV in Resources */,
 				DC7082A32858C8670033B3E9 /* FredokaOne-Regular.ttf in Resources */,
-				DCAA1CD0286977B700B5482F /* Tidur.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,13 +512,14 @@
 				06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */,
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
 				C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */,
+				C55E67D9286A04AD00C7135C /* Background.swift in Sources */,
 				C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */,
 				C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */,
 				C5AF21EC28634AD2002AEAA7 /* view-hidden.swift in Sources */,
-				DCAA1CCE2868B0B000B5482F /* Background.swift in Sources */,
 				C5AF21E628631098002AEAA7 /* VideoStatusObserver.swift in Sources */,
 				DC7082A82858EFD30033B3E9 /* WordImageView.swift in Sources */,
 				06799FF42863009800B4FC7E /* CategoriesButton.swift in Sources */,
+				C55E67D22869B43D00C7135C /* WordCategories.swift in Sources */,
 				DC7082A62858ED370033B3E9 /* FontView.swift in Sources */,
 				C5AF21EA2863449D002AEAA7 /* Words.swift in Sources */,
 				C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */,
