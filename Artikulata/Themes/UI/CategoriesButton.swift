@@ -9,12 +9,11 @@ import SwiftUI
 
 struct CategoriesButton: View {
     var categoriesImage : String
-    var categoriesName : String
+    var categoriesName : WordCategories
     
     @State var isActive = false
     
     var body: some View {
-    
         Button {
             self.isActive = true
         } label: {
@@ -25,12 +24,11 @@ struct CategoriesButton: View {
                     .frame(width: 221, height: 166)
                     .cornerRadius(20)
 
-                FontView(text: categoriesName, size: 26)
+                FontView(text: categoriesName.rawValue, size: 26)
             }
         }
         .buttonStyle(PlainButtonStyle())
         .background(
-            
             NavigationLink(destination: ListWordView(categoriesName: categoriesName).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive){
             }.hidden()
             
@@ -41,7 +39,7 @@ struct CategoriesButton: View {
 
 struct CategoriesButton_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: "Kata Sifat")
+        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: WordCategories.KataSifat)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
