@@ -18,8 +18,9 @@ class AudioStreamManager {
     //Sound classifier
     private var soundAnalyzer: SNAudioStreamAnalyzer?
     private var soundClassifierRequest: SNClassifySoundRequest?
-
-    init(){
+    private var wordCategory: WordCategories
+    init(wordCategory: WordCategories){
+        self.wordCategory = wordCategory
         audioEngine = AVAudioEngine()
         
         inputBus = AVAudioNodeBus(0)
@@ -57,13 +58,36 @@ class AudioStreamManager {
     private func prepareSoundClassifier(){
         let config = MLModelConfiguration()
         ///untuk sementara masih kata sifat
-        let soundClassifier = try? KataSifatModel(configuration: config)
-        
-        guard let soundClassifier = soundClassifier else{
-            print("ERROR: Model doesn't Exist")
-            return
+        if wordCategory == .KataBenda{
+            print("USING KAta BENDa")
+            let soundClassifier = try? KataBendaModel(configuration: config)
+            
+            guard let soundClassifier = soundClassifier else{
+                print("ERROR: Model doesn't Exist")
+                return
+            }
+            soundClassifierRequest = try? SNClassifySoundRequest(mlModel: soundClassifier.model)
         }
-        soundClassifierRequest = try? SNClassifySoundRequest(mlModel: soundClassifier.model)
+        else if wordCategory == .KataSifat{
+            print("USING KAta SIFAT")
+            let soundClassifier = try? KataSifatModel(configuration: config)
+            
+            guard let soundClassifier = soundClassifier else{
+                print("ERROR: Model doesn't Exist")
+                return
+            }
+            soundClassifierRequest = try? SNClassifySoundRequest(mlModel: soundClassifier.model)
+        }
+        else if wordCategory == .KataKerja{
+            print("USING KAta KERJA")
+            let soundClassifier = try? KataKerjaModel(configuration: config)
+            
+            guard let soundClassifier = soundClassifier else{
+                print("ERROR: Model doesn't Exist")
+                return
+            }
+            soundClassifierRequest = try? SNClassifySoundRequest(mlModel: soundClassifier.model)
+        }
     }
     /**
      Use this function to start the live audio

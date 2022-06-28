@@ -30,13 +30,12 @@ struct VideoSpeechView: View {
     var currentWordDisplay: String
     private var audioManager: AudioStreamManager
     
-    init(video: Words){
+    init(video: Words, wordCategory: WordCategories){
         self.currentWordDisplay = video.rawValue
         self.videoPlayer = AVPlayer(url: Bundle.main.url(forResource: video.rawValue, withExtension: "MOV")!)
-        
         self.videoStatusObserver = VideoStatusObserver()
         self.soundAnalyzerObserver = SoundAnalyzerObserver(currentWord: video.rawValue)
-        self.audioManager = AudioStreamManager()
+        self.audioManager = AudioStreamManager(wordCategory: wordCategory)
         audioManager.addResultObservation(with: soundAnalyzerObserver)
     }
     
@@ -227,7 +226,7 @@ struct AVPlayerControllerRepresented: UIViewControllerRepresentable {
 
 struct VideoSpeechView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoSpeechView(video: Words.Marah)
+        VideoSpeechView(video: Words.Marah, wordCategory: WordCategories.KataSifat)
             .previewInterfaceOrientation(.landscapeRight)
     }
 }

@@ -32,7 +32,7 @@ struct WordImageView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .background(
-                NavigationLink(destination: VideoSpeechView(video: word).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive) {
+                NavigationLink(destination: VideoSpeechView(video: word, wordCategory: wordCategory).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive) {
                 }
                 .hidden()
             )
