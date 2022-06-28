@@ -14,6 +14,7 @@
 		A909689E2867366D002FDCFA /* YukCobaLagi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A909689D2867366D002FDCFA /* YukCobaLagi.m4a */; };
 		A90968A0286845A1002FDCFA /* SekaliLagi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A909689F286845A1002FDCFA /* SekaliLagi.m4a */; };
 		A90968B0286AAA0B002FDCFA /* Giliranmu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */; };
+		A90968B4286AB072002FDCFA /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = A90968B3286AB072002FDCFA /* Tidur.MOV */; };
 		A91D294C2865CCE900C26EF0 /* AudioPlayerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */; };
 		C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166728508C0A002F9E3A /* ArtikulataApp.swift */; };
 		C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166928508C0A002F9E3A /* ListWordView.swift */; };
@@ -24,7 +25,6 @@
 		C506167E28508C0B002F9E3A /* ArtikulataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506167D28508C0B002F9E3A /* ArtikulataTests.swift */; };
 		C506168828508C0B002F9E3A /* ArtikulataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168728508C0B002F9E3A /* ArtikulataUITests.swift */; };
 		C506168A28508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */; };
-		C55E67CE2869B42700C7135C /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C55E67CD2869B42700C7135C /* Tidur.MOV */; };
 		C55E67D22869B43D00C7135C /* WordCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D12869B43D00C7135C /* WordCategories.swift */; };
 		C55E67D9286A04AD00C7135C /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D8286A04AD00C7135C /* Background.swift */; };
 		C55E67DD286A9EFA00C7135C /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = C55E67DC286A9EFA00C7135C /* Microphone.json */; };
@@ -80,6 +80,7 @@
 		A909689D2867366D002FDCFA /* YukCobaLagi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = YukCobaLagi.m4a; sourceTree = "<group>"; };
 		A909689F286845A1002FDCFA /* SekaliLagi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SekaliLagi.m4a; sourceTree = "<group>"; };
 		A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Giliranmu.m4a; sourceTree = "<group>"; };
+		A90968B3286AB072002FDCFA /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Tidur.MOV; sourceTree = "<group>"; };
 		A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerObserver.swift; sourceTree = "<group>"; };
 		C506166428508C0A002F9E3A /* Artikulata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artikulata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506166728508C0A002F9E3A /* ArtikulataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataApp.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		C506168328508C0B002F9E3A /* ArtikulataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtikulataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506168728508C0B002F9E3A /* ArtikulataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITests.swift; sourceTree = "<group>"; };
 		C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C55E67CD2869B42700C7135C /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Tidur.MOV; sourceTree = "<group>"; };
 		C55E67D12869B43D00C7135C /* WordCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategories.swift; sourceTree = "<group>"; };
 		C55E67D8286A04AD00C7135C /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C55E67DC286A9EFA00C7135C /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Microphone.json; sourceTree = "<group>"; };
@@ -331,13 +331,13 @@
 			isa = PBXGroup;
 			children = (
 				DCAA1C552862D6A700B5482F /* Marah.MOV */,
-				C55E67CD2869B42700C7135C /* Tidur.MOV */,
 				DCAA1C512862D56000B5482F /* Sedih.MOV */,
 				DCAA1C532862D56600B5482F /* Senang.MOV */,
 				DCAA1C602862D7CC00B5482F /* Makan.MOV */,
 				DCAA1C572862D7A200B5482F /* Baju.MOV */,
 				DCAA1C582862D7A200B5482F /* Bangku.MOV */,
 				DCAA1C592862D7A200B5482F /* Celana.MOV */,
+				A90968B3286AB072002FDCFA /* Tidur.MOV */,
 				DCAA1C5D2862D7B400B5482F /* Minum.MOV */,
 			);
 			path = Video;
@@ -483,12 +483,12 @@
 				A90968A0286845A1002FDCFA /* SekaliLagi.m4a in Resources */,
 				A90968B0286AAA0B002FDCFA /* Giliranmu.m4a in Resources */,
 				DCAA1C542862D56600B5482F /* Senang.MOV in Resources */,
+				A90968B4286AB072002FDCFA /* Tidur.MOV in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
 				A909689E2867366D002FDCFA /* YukCobaLagi.m4a in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,
 				DCAA1C522862D56000B5482F /* Sedih.MOV in Resources */,
-				C55E67CE2869B42700C7135C /* Tidur.MOV in Resources */,
 				C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */,
 				DCAA1C562862D6A700B5482F /* Marah.MOV in Resources */,
 				DC7082A32858C8670033B3E9 /* FredokaOne-Regular.ttf in Resources */,
@@ -700,7 +700,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
-				DEVELOPMENT_TEAM = L2V23RWBGR;
+				DEVELOPMENT_TEAM = 57HR33A3GN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Artikulata/Info.plist;
@@ -714,7 +714,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -731,7 +731,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
-				DEVELOPMENT_TEAM = L2V23RWBGR;
+				DEVELOPMENT_TEAM = 57HR33A3GN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Artikulata/Info.plist;
@@ -745,7 +745,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
