@@ -9,13 +9,16 @@ import Foundation
 
 
 class VideoStatusObserver: ObservableObject{
-    @Published var videoIsPlaying = true
-    @Published var willStartPlaying = false
+    @Published var willStartPlaying = true
+    @Published var videoTriggered = true
+    
     @objc func playerDidFinishPlaying(note: NSNotification) {
-        self.videoIsPlaying = false
+        self.willStartPlaying = false
+        self.videoTriggered = true
     }
     
     deinit{
+        print("VIDEO DEINIT")
         NotificationCenter.default.removeObserver(self)
     }
 }
