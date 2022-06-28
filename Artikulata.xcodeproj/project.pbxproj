@@ -50,7 +50,10 @@
 		DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C5D2862D7B400B5482F /* Minum.MOV */; };
 		DCAA1C622862D7CC00B5482F /* Makan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C602862D7CC00B5482F /* Makan.MOV */; };
 		DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */; };
-		DCAA1CC82867868F00B5482F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA1CC72867868F00B5482F /* Lottie */; };
+		DCAA1CE1286B036E00B5482F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA1CE0286B036E00B5482F /* Lottie */; };
+		DCAA1CE3286B040F00B5482F /* WowKamuHebat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CE2286B040F00B5482F /* WowKamuHebat.m4a */; };
+		DCAA1CE5286B045400B5482F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1CE4286B045400B5482F /* AudioPlayer.swift */; };
+		DCAA1CE7286B048200B5482F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1CE6286B048200B5482F /* AppState.swift */; };
 		DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */; };
 		DCE19437285B916900673946 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE19436285B916900673946 /* BackButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +123,9 @@
 		DCAA1C5D2862D7B400B5482F /* Minum.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Minum.MOV; sourceTree = "<group>"; };
 		DCAA1C602862D7CC00B5482F /* Makan.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Makan.MOV; sourceTree = "<group>"; };
 		DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		DCAA1CE2286B040F00B5482F /* WowKamuHebat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = WowKamuHebat.m4a; sourceTree = "<group>"; };
+		DCAA1CE4286B045400B5482F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		DCAA1CE6286B048200B5482F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		DCBB2F312861EDE9002B353D /* VideoSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSpeechView.swift; sourceTree = "<group>"; };
 		DCE19436285B916900673946 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCAA1CC82867868F00B5482F /* Lottie in Frameworks */,
+				DCAA1CE1286B036E00B5482F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 				C5AF21E128630D0F002AEAA7 /* SoundAnalyzerObserver.swift */,
 				C5AF21E528631098002AEAA7 /* VideoStatusObserver.swift */,
 				A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */,
+				DCAA1CE4286B045400B5482F /* AudioPlayer.swift */,
 			);
 			path = Observers;
 			sourceTree = "<group>";
@@ -255,6 +262,7 @@
 		C5AF21F1286355FD002AEAA7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DCAA1CE8286B06C300B5482F /* Helper */,
 				C5AF21F428635722002AEAA7 /* Constants */,
 				C5AF21F328635631002AEAA7 /* Extension */,
 			);
@@ -317,6 +325,14 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
+		DCAA1CE8286B06C300B5482F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA1CE6286B048200B5482F /* AppState.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		DCBB2F332861EE46002B353D /* Media */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +365,7 @@
 				A909689F286845A1002FDCFA /* SekaliLagi.m4a */,
 				A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */,
 				A909689D2867366D002FDCFA /* YukCobaLagi.m4a */,
+				DCAA1CE2286B040F00B5482F /* WowKamuHebat.m4a */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -382,7 +399,7 @@
 			);
 			name = Artikulata;
 			packageProductDependencies = (
-				DCAA1CC72867868F00B5482F /* Lottie */,
+				DCAA1CE0286B036E00B5482F /* Lottie */,
 			);
 			productName = Artikulata;
 			productReference = C506166428508C0A002F9E3A /* Artikulata.app */;
@@ -457,7 +474,7 @@
 			);
 			mainGroup = C506165B28508C0A002F9E3A;
 			packageReferences = (
-				DCAA1CC62867868F00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DCAA1CDF286B036E00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = C506166528508C0A002F9E3A /* Products */;
 			projectDirPath = "";
@@ -486,6 +503,7 @@
 				A90968B4286AB072002FDCFA /* Tidur.MOV in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
 				A909689E2867366D002FDCFA /* YukCobaLagi.m4a in Resources */,
+				DCAA1CE3286B040F00B5482F /* WowKamuHebat.m4a in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,
 				DCAA1C522862D56000B5482F /* Sedih.MOV in Resources */,
@@ -519,6 +537,7 @@
 				C5AF21E8286311BC002AEAA7 /* CompletionView.swift in Sources */,
 				C506167128508C0B002F9E3A /* Persistence.swift in Sources */,
 				06799FF6286300DF00B4FC7E /* ColorManager.swift in Sources */,
+				DCAA1CE7286B048200B5482F /* AppState.swift in Sources */,
 				C5AF21E228630D0F002AEAA7 /* SoundAnalyzerObserver.swift in Sources */,
 				DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */,
 				C5AF21E028630C00002AEAA7 /* KataKerjaModel.mlmodel in Sources */,
@@ -527,6 +546,7 @@
 				06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */,
 				A91D294C2865CCE900C26EF0 /* AudioPlayerObserver.swift in Sources */,
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
+				DCAA1CE5286B045400B5482F /* AudioPlayer.swift in Sources */,
 				C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */,
 				C55E67D9286A04AD00C7135C /* Background.swift in Sources */,
 				C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */,
@@ -700,7 +720,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
-				DEVELOPMENT_TEAM = 57HR33A3GN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Artikulata/Info.plist;
@@ -871,7 +891,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DCAA1CC62867868F00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		DCAA1CDF286B036E00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
 			requirement = {
@@ -882,9 +902,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DCAA1CC72867868F00B5482F /* Lottie */ = {
+		DCAA1CE0286B036E00B5482F /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DCAA1CC62867868F00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = DCAA1CDF286B036E00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
