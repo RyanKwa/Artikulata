@@ -7,16 +7,20 @@
 
 import SwiftUI
 import AVKit
+//import Lottie
 
 struct VideoSpeechView: View {
     
     @ObservedObject var soundAnalyzerObserver: SoundAnalyzerObserver
-    @ObservedObject var videoStatusObserver: VideoStatusObserver
+    @ObservedObject var videoStatusObserver = VideoStatusObserver()
+    @ObservedObject var audioObserver = AudioPlayerObserver()
     
     @State private var widthSize: CGFloat = UIScreen.main.bounds.size.width
     @State private var heightSize: CGFloat = UIScreen.main.bounds.size.height
-    @State private var videoPlayer: AVPlayer
+    private var videoPlayer: AVPlayer
     
+    @State var videoIsPlaying = true
+    @State var timeToPlayAudio = false
     @State var isRecording = false
     @State var recordCycleFinished = false
     @State var duration = 0
@@ -25,12 +29,11 @@ struct VideoSpeechView: View {
     
     var currentWordDisplay: String
     private var audioManager: AudioStreamManager
-    
+        
     init(video: Words){
         self.currentWordDisplay = video.rawValue
         self.videoPlayer = AVPlayer(url: Bundle.main.url(forResource: video.rawValue, withExtension: "MOV")!)
-        
-        self.videoStatusObserver = VideoStatusObserver()
+
         self.soundAnalyzerObserver = SoundAnalyzerObserver(currentWord: video.rawValue)
         self.audioManager = AudioStreamManager()
         audioManager.addResultObservation(with: soundAnalyzerObserver)
@@ -51,7 +54,19 @@ struct VideoSpeechView: View {
                         .frame(width: geo.size.width, height: geo.size.height)
                         .disabled(true)
                         .edgesIgnoringSafeArea(.all)
-                        .onReceive(videoStatusObserver.$willStartPlaying, perform: { _ in
+///                         trigger B video untuk play
+                        .onReceive(videoStatusObserver.$videoTriggered, perform: { _ in
+                            let videoWillPlay = videoStatusObserver.willStartPlaying ? true : false
+                            guard soundAnalyzerObserver.navigateToNextView == false else {
+                                return
+                            }
+                            guard videoWillPlay == true else{
+                                audioObserver.afterPlayingVideo = true
+                                audioObserver.audioPlayNow = true
+                                audioObserver.audioTriggered = true
+                                return
+                            }
+                            
                             replayVideo()
                             resetRecordingStatus()
                             NotificationCenter.default.addObserver(videoStatusObserver, selector: #selector(videoStatusObserver.playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
@@ -59,29 +74,65 @@ struct VideoSpeechView: View {
                 }
                 .frame(width: (widthSize/2)+10)
                 .edgesIgnoringSafeArea(.all)
-                
                 Spacer()
                 
                 VStack {
                     FontView(text: currentWordDisplay, size: 64)
+///                         trigger A:  audio  play
+                        .onReceive(audioObserver.$audioTriggered) { _ in
+                            timeToPlayAudio = audioObserver.audioPlayNow ? true : false
+                            guard timeToPlayAudio == true else {
+                                videoStatusObserver.willStartPlaying = true
+                                videoStatusObserver.videoTriggered = true
+                                audioObserver.audioPlayNow = false
+                                return
+                            }
+                            guard soundAnalyzerObserver.navigateToNextView == false else {
+                                return
+                            }
+                            self.recordCycleFinished = false
+                            if numberOfTries == 0 || audioObserver.afterPlayingVideo {
+                                audioObserver.afterPlayingVideo = false
+                                audioObserver.afterGiliranMu = true
+                                audioObserver.audioPlayNow = false
+                                audioObserver.giliranMuAudio()
+                                return
+                            }
+                            if numberOfTries == 1 {
+                                audioObserver.afterPlayingVideo = true
+                                audioObserver.audioPlayNow = false
+                                videoStatusObserver.willStartPlaying = true
+                                audioObserver.yukCobaLagi()
+
+                            }
+                            else if numberOfTries == 2 {
+                                audioObserver.afterPlayingVideo = true
+                                audioObserver.audioPlayNow = false
+                                videoStatusObserver.willStartPlaying = true
+                                audioObserver.sekaliLagiAudio()
+                            }
+                        }
+        
                     
-                    // lottie animation
-                    
-                    /// masih sementara
                     if readyToRecord() {
                         Image(systemName: "music.mic")
                             .font(.system(size: 64.0))
                             .padding()
                             .opacity(0.2)
-                            .onReceive(videoStatusObserver.objectWillChange) { _ in
-                                guard isRecording == false else{
+
+///                             trigger C:  speech  start
+                            .onReceive(audioObserver.$recordTriggered) { _ in
+                                let recordNow = audioObserver.recordNow ? false : true
+                                guard recordNow == false else{
                                     return
                                 }
+                                videoIsPlaying = false
                                 audioManager.startLiveAudio()
                                 self.isRecording = true
                             }
                     }
                     else{
+//                        LottieAnimationView(isPaused: false)
                         Image(systemName: "music.mic")
                             .font(.system(size: 64.0))
                             .opacity(1)
@@ -89,9 +140,7 @@ struct VideoSpeechView: View {
                                 guard isRecording == true else{
                                     return
                                 }
-                                
-                                //1 cycle = wrong = +1 noofTries
-                                //go watch the video
+                                //1 cycle = wrong = +1 Number Of Tries
                                 if duration == Constant.MAX_DURATION{
                                     audioManager.stopLiveAudio()
                                     stopTimer()
@@ -103,29 +152,23 @@ struct VideoSpeechView: View {
                                         soundAnalyzerObserver.navigateToNextView = true
                                     }
                                     else{
-                                        self.videoStatusObserver.videoIsPlaying = true
-                                        self.videoStatusObserver.willStartPlaying = true
+                                        audioObserver.recordNow = false
+                                        videoIsPlaying = true
+                                        self.audioObserver.audioPlayNow = true
+                                        self.audioObserver.afterPlayingVideo = false
+                                        self.audioObserver.audioTriggered = true
                                     }
                                 }
-                                
+
                                 else if duration <= Constant.MAX_DURATION {
                                     duration += 1
                                 }
-                                
-                                /// kalau benar pindah
+///                                  Move to the completion page
                                 if soundAnalyzerObserver.navigateToNextView {
                                     audioManager.stopLiveAudio()
                                     stopTimer()
                                 }
-                                
-                                if numberOfTries == Constant.MAX_TRIES {
-                                    audioManager.stopLiveAudio()
-                                    stopTimer()
-                                }
-                                
-                            }
-                            .background{
-
+                            }.background{
                                 NavigationLink(destination: CompletionView().navigationBarHidden(true),isActive: $soundAnalyzerObserver.navigateToNextView){
 
                                 }
@@ -136,12 +179,14 @@ struct VideoSpeechView: View {
                 Spacer()
             }
             Button(action: {
+                audioObserver.recordNow = false
+                audioObserver.afterPlayingVideo = true
                 replayVideo()
                 stopTimer()
                 resetRecordingStatus()
                 audioManager.stopLiveAudio()
                 startTimer()
-                videoStatusObserver.videoIsPlaying = true
+                videoIsPlaying = true
             }){
                 Circle()
                     .fill(Color(red: 0.58, green: 0.45, blue: 0.49))
@@ -157,7 +202,13 @@ struct VideoSpeechView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .position(x: widthSize/4-30, y: heightSize/2-20)
-            .isHidden(videoStatusObserver.videoIsPlaying)
+            .isHidden(videoIsPlaying)
+        }.onDisappear{
+            stopTimer()
+            audioObserver.audioPlayer.stop()
+            self.videoPlayer.pause()
+            self.videoPlayer.seek(to: .zero)
+            
         }
     }
     func startTimer(){
@@ -178,10 +229,7 @@ struct VideoSpeechView: View {
         self.duration = 0
         self.recordCycleFinished = false
     }
-
 }
-
-
 
 struct AVPlayerControllerRepresented: UIViewControllerRepresentable {
     var player : AVPlayer
@@ -204,3 +252,4 @@ struct VideoSpeechView_Previews: PreviewProvider {
             .previewInterfaceOrientation(.landscapeRight)
     }
 }
+

@@ -11,6 +11,10 @@
 		06799FF42863009800B4FC7E /* CategoriesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06799FF32863009800B4FC7E /* CategoriesButton.swift */; };
 		06799FF6286300DF00B4FC7E /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06799FF5286300DF00B4FC7E /* ColorManager.swift */; };
 		06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06799FF72863013A00B4FC7E /* ListCategories.swift */; };
+		A909689E2867366D002FDCFA /* YukCobaLagi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A909689D2867366D002FDCFA /* YukCobaLagi.m4a */; };
+		A90968A0286845A1002FDCFA /* SekaliLagi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A909689F286845A1002FDCFA /* SekaliLagi.m4a */; };
+		A90968B0286AAA0B002FDCFA /* Giliranmu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */; };
+		A91D294C2865CCE900C26EF0 /* AudioPlayerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */; };
 		C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166728508C0A002F9E3A /* ArtikulataApp.swift */; };
 		C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166928508C0A002F9E3A /* ListWordView.swift */; };
 		C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C506166B28508C0B002F9E3A /* Assets.xcassets */; };
@@ -68,6 +72,10 @@
 		06799FF32863009800B4FC7E /* CategoriesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButton.swift; sourceTree = "<group>"; };
 		06799FF5286300DF00B4FC7E /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		06799FF72863013A00B4FC7E /* ListCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategories.swift; sourceTree = "<group>"; };
+		A909689D2867366D002FDCFA /* YukCobaLagi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = YukCobaLagi.m4a; sourceTree = "<group>"; };
+		A909689F286845A1002FDCFA /* SekaliLagi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SekaliLagi.m4a; sourceTree = "<group>"; };
+		A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Giliranmu.m4a; sourceTree = "<group>"; };
+		A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerObserver.swift; sourceTree = "<group>"; };
 		C506166428508C0A002F9E3A /* Artikulata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artikulata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506166728508C0A002F9E3A /* ArtikulataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataApp.swift; sourceTree = "<group>"; };
 		C506166928508C0A002F9E3A /* ListWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWordView.swift; sourceTree = "<group>"; };
@@ -229,6 +237,7 @@
 			children = (
 				C5AF21E128630D0F002AEAA7 /* SoundAnalyzerObserver.swift */,
 				C5AF21E528631098002AEAA7 /* VideoStatusObserver.swift */,
+				A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */,
 			);
 			path = Observers;
 			sourceTree = "<group>";
@@ -316,6 +325,9 @@
 		DCBB2F372861EE63002B353D /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				A909689F286845A1002FDCFA /* SekaliLagi.m4a */,
+				A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */,
+				A909689D2867366D002FDCFA /* YukCobaLagi.m4a */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -439,8 +451,11 @@
 				DCAA1C622862D7CC00B5482F /* Makan.MOV in Resources */,
 				06799FF22863000900B4FC7E /* Colors.xcassets in Resources */,
 				DCAA1C5C2862D7A200B5482F /* Celana.MOV in Resources */,
+				A90968A0286845A1002FDCFA /* SekaliLagi.m4a in Resources */,
+				A90968B0286AAA0B002FDCFA /* Giliranmu.m4a in Resources */,
 				DCAA1C542862D56600B5482F /* Senang.MOV in Resources */,
 				DCAA1C5B2862D7A200B5482F /* Bangku.MOV in Resources */,
+				A909689E2867366D002FDCFA /* YukCobaLagi.m4a in Resources */,
 				C506166F28508C0B002F9E3A /* Preview Assets.xcassets in Resources */,
 				DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */,
 				DCAA1C522862D56000B5482F /* Sedih.MOV in Resources */,
@@ -480,6 +495,7 @@
 				DCE19437285B916900673946 /* BackButtonView.swift in Sources */,
 				DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */,
 				06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */,
+				A91D294C2865CCE900C26EF0 /* AudioPlayerObserver.swift in Sources */,
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
 				C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */,
 				C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */,
