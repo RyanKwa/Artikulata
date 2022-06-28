@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct CompletionView: View {
+    @EnvironmentObject var appState: AppState
+    @State var time = 5
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
-        Text("Kamu Hebat!")
+        
+        VStack {
+            Background(backgroundImage: "Completion")
+                .onAppear() {
+                    AudioPlayer.playAudio()
+                }
+                .onReceive(timer) { _ in
+                    if time > 0 {
+                        time -= 1
+                    }
+                    
+                    if time == 0 {
+                        appState.rootViewId = UUID()
+                    }
+                }
+                .onDisappear() {
+                    AudioPlayer.stopAudio()
+                }
+        }
     }
 }
 

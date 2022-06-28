@@ -11,6 +11,7 @@ struct ListWordView: View {
     @State var isActive: Bool = false
     @State var word: String = "Marah"
     @Environment(\.presentationMode) var presentation
+    @EnvironmentObject var appState: AppState
     
     var categoriesName : WordCategories
 
@@ -84,6 +85,7 @@ struct ListWordView: View {
                 .padding(.bottom, 30)
             }
         }
+        .id(appState.rootViewId)
     }
 }
 
