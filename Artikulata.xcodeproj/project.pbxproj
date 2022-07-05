@@ -16,6 +16,7 @@
 		A90968B0286AAA0B002FDCFA /* Giliranmu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */; };
 		A90968B4286AB072002FDCFA /* Tidur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = A90968B3286AB072002FDCFA /* Tidur.MOV */; };
 		A91D294C2865CCE900C26EF0 /* AudioPlayerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */; };
+		A9A556BB286BF87900C8A624 /* AudioPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A556BA286BF87900C8A624 /* AudioPermission.swift */; };
 		C506166828508C0A002F9E3A /* ArtikulataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166728508C0A002F9E3A /* ArtikulataApp.swift */; };
 		C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506166928508C0A002F9E3A /* ListWordView.swift */; };
 		C506166C28508C0B002F9E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C506166B28508C0B002F9E3A /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 		A90968AF286AAA0B002FDCFA /* Giliranmu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Giliranmu.m4a; sourceTree = "<group>"; };
 		A90968B3286AB072002FDCFA /* Tidur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Tidur.MOV; sourceTree = "<group>"; };
 		A91D294B2865CCE900C26EF0 /* AudioPlayerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerObserver.swift; sourceTree = "<group>"; };
+		A9A556BA286BF87900C8A624 /* AudioPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPermission.swift; sourceTree = "<group>"; };
 		C506166428508C0A002F9E3A /* Artikulata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artikulata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506166728508C0A002F9E3A /* ArtikulataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtikulataApp.swift; sourceTree = "<group>"; };
 		C506166928508C0A002F9E3A /* ListWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWordView.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				DCAA1CE6286B048200B5482F /* AppState.swift */,
+				A9A556BA286BF87900C8A624 /* AudioPermission.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				C5AF21E8286311BC002AEAA7 /* CompletionView.swift in Sources */,
 				C506167128508C0B002F9E3A /* Persistence.swift in Sources */,
 				06799FF6286300DF00B4FC7E /* ColorManager.swift in Sources */,
+				A9A556BB286BF87900C8A624 /* AudioPermission.swift in Sources */,
 				DCAA1CE7286B048200B5482F /* AppState.swift in Sources */,
 				C5AF21E228630D0F002AEAA7 /* SoundAnalyzerObserver.swift in Sources */,
 				DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */,
@@ -717,13 +721,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 57HR33A3GN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Artikulata/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow microphone to access this application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -733,7 +738,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -748,13 +753,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
 				DEVELOPMENT_TEAM = 57HR33A3GN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Artikulata/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow microphone to access this application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -764,7 +770,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MC2.Artikulata2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

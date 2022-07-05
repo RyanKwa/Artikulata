@@ -7,8 +7,11 @@
 
 
 import SwiftUI
+import AVFoundation
 
 struct ListCategories: View {
+    
+    var audioPermission = AudioPermission()
     
     var body: some View {
         //background color
@@ -37,6 +40,8 @@ struct ListCategories: View {
                 }
                 .padding(.bottom, 30)
             }
+        }.onAppear(){
+            audioPermission.requestPermission()
         }
     }
 }
