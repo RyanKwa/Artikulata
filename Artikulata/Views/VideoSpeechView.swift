@@ -71,7 +71,7 @@ struct VideoSpeechView: View {
                                 return
                             }
                             
-                            replayVideo()
+                            resetVideo()
                             resetRecordingStatus()
                             NotificationCenter.default.addObserver(videoStatusObserver, selector: #selector(videoStatusObserver.playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
                         })
@@ -175,8 +175,7 @@ struct VideoSpeechView: View {
                                     stopTimer()
                                 }
                             }.background{
-                                NavigationLink(destination: CompletionView().navigationBarHidden(true),isActive: $soundAnalyzerObserver.navigateToNextView){
-
+                                NavigationLink(destination: CompletionView().environmentObject(soundAnalyzerObserver).environmentObject(audioObserver).navigationBarHidden(true),isActive: $soundAnalyzerObserver.navigateToNextView){
                                 }
                             }
                     }
@@ -189,56 +188,27 @@ struct VideoSpeechView: View {
             Button(action: {
                 self.presentation.wrappedValue.dismiss()
             }){
-                Circle()
-                    .fill(Color(red: 0.58, green: 0.45, blue: 0.49))
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .overlay(
-                        Image(systemName: "chevron.backward")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 18, height: 28, alignment: .leading)
-                            .foregroundColor(.white)
-                    )
+                IconButton(iconName: "chevron.backward")
             }
             .buttonStyle(PlainButtonStyle())
             .position(x: widthSize/50, y: heightSize/6)
-            .onDisappear(){
-                self.videoPlayer.pause()
-                self.videoPlayer.seek(to: .zero)
-                stopTimer()
-            }
             
             // replay button
             Button(action: {
-                audioObserver.recordNow = false
-                audioObserver.afterPlayingVideo = true
                 replayVideo()
-                stopTimer()
-                resetRecordingStatus()
-                audioManager.stopLiveAudio()
-                startTimer()
-                videoIsPlaying = true
             }){
-                Circle()
-                    .fill(Color(red: 0.58, green: 0.45, blue: 0.49))
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .overlay(
-                        Image(systemName: "gobackward")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 18, height: 28, alignment: .center)
-                            .foregroundColor(.white)
-                    )
+                IconButton(iconName: "gobackward")
             }
             .buttonStyle(PlainButtonStyle())
             .position(x: widthSize/4-30, y: heightSize/2-20)
             .isHidden(videoIsPlaying)
         }.onDisappear{
-            stopTimer()
-            audioObserver.audioPlayer.stop()
-            self.videoPlayer.pause()
-            self.videoPlayer.seek(to: .zero)
-            
+            if !soundAnalyzerObserver.navigateToNextView{
+                stopTimer()
+                audioObserver.audioPlayer.stop()
+                self.videoPlayer.pause()
+                self.videoPlayer.seek(to: .zero)
+            }
         }
     }
     func startTimer(){
@@ -250,9 +220,25 @@ struct VideoSpeechView: View {
     func readyToRecord() -> Bool{
         return !isRecording && !recordCycleFinished && numberOfTries != Constant.MAX_TRIES
     }
-    func replayVideo() {
+    func resetVideo() {
+        /// possible solution untuk fix speaker 
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, options: .defaultToSpeaker)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch let error as NSError {
+            print("AVAudioSession error: \(error.localizedDescription)")
+        }
         self.videoPlayer.seek(to: .zero)
         self.videoPlayer.play()
+    }
+    func replayVideo(){
+        audioObserver.recordNow = false
+        audioObserver.afterPlayingVideo = true
+        resetVideo()
+        stopTimer()
+        resetRecordingStatus()
+        audioManager.stopLiveAudio()
+        videoIsPlaying = true
     }
     func resetRecordingStatus(){
         self.isRecording = false
