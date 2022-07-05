@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 class AppState: ObservableObject {
-    @Published var rootViewId = UUID()
+    @Published var moveToListWord = false
 }
