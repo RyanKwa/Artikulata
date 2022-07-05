@@ -29,6 +29,10 @@
 		C55E67D22869B43D00C7135C /* WordCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D12869B43D00C7135C /* WordCategories.swift */; };
 		C55E67D9286A04AD00C7135C /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E67D8286A04AD00C7135C /* Background.swift */; };
 		C55E67DD286A9EFA00C7135C /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = C55E67DC286A9EFA00C7135C /* Microphone.json */; };
+		C59DAB2E2874280200ED4CC5 /* KataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DAB2D2874280200ED4CC5 /* KataModel.swift */; };
+		C59DAB302874281300ED4CC5 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DAB2F2874281300ED4CC5 /* IconButton.swift */; };
+		C59DAB3328742AAF00ED4CC5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C59DAB3228742AAF00ED4CC5 /* Lottie */; };
+		C59DAB3528742E6000ED4CC5 /* KategoriModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DAB3428742E6000ED4CC5 /* KategoriModel.swift */; };
 		C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */; };
 		C5AF21DE28630C00002AEAA7 /* KataSifatModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */; };
 		C5AF21DF28630C00002AEAA7 /* KataBendaModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */; };
@@ -51,7 +55,6 @@
 		DCAA1C5E2862D7B400B5482F /* Minum.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C5D2862D7B400B5482F /* Minum.MOV */; };
 		DCAA1C622862D7CC00B5482F /* Makan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1C602862D7CC00B5482F /* Makan.MOV */; };
 		DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1C9F28676E3400B5482F /* LottieAnimationView.swift */; };
-		DCAA1CE1286B036E00B5482F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA1CE0286B036E00B5482F /* Lottie */; };
 		DCAA1CE3286B040F00B5482F /* WowKamuHebat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DCAA1CE2286B040F00B5482F /* WowKamuHebat.m4a */; };
 		DCAA1CE5286B045400B5482F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1CE4286B045400B5482F /* AudioPlayer.swift */; };
 		DCAA1CE7286B048200B5482F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1CE6286B048200B5482F /* AppState.swift */; };
@@ -102,6 +105,9 @@
 		C55E67D12869B43D00C7135C /* WordCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategories.swift; sourceTree = "<group>"; };
 		C55E67D8286A04AD00C7135C /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C55E67DC286A9EFA00C7135C /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Microphone.json; sourceTree = "<group>"; };
+		C59DAB2D2874280200ED4CC5 /* KataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KataModel.swift; sourceTree = "<group>"; };
+		C59DAB2F2874281300ED4CC5 /* IconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		C59DAB3428742E6000ED4CC5 /* KategoriModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriModel.swift; sourceTree = "<group>"; };
 		C5AF21D828630B58002AEAA7 /* AudioStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamManager.swift; sourceTree = "<group>"; };
 		C5AF21DB28630C00002AEAA7 /* KataSifatModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataSifatModel.mlmodel; sourceTree = "<group>"; };
 		C5AF21DC28630C00002AEAA7 /* KataBendaModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KataBendaModel.mlmodel; sourceTree = "<group>"; };
@@ -137,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCAA1CE1286B036E00B5482F /* Lottie in Frameworks */,
+				C59DAB3328742AAF00ED4CC5 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +196,7 @@
 		C506166628508C0A002F9E3A /* Artikulata */ = {
 			isa = PBXGroup;
 			children = (
+				C59DAB2C287427E800ED4CC5 /* Models */,
 				C5AF21F1286355FD002AEAA7 /* Utilities */,
 				C5AF21E428630E5A002AEAA7 /* Observers */,
 				C5AF21E328630E36002AEAA7 /* AudioStream */,
@@ -230,6 +237,15 @@
 				C506168928508C0B002F9E3A /* ArtikulataUITestsLaunchTests.swift */,
 			);
 			path = ArtikulataUITests;
+			sourceTree = "<group>";
+		};
+		C59DAB2C287427E800ED4CC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C59DAB2D2874280200ED4CC5 /* KataModel.swift */,
+				C59DAB3428742E6000ED4CC5 /* KategoriModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C5AF21DA28630BD8002AEAA7 /* MLModels */ = {
@@ -311,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				C55E67D8286A04AD00C7135C /* Background.swift */,
+				C59DAB2F2874281300ED4CC5 /* IconButton.swift */,
 				DC7082A52858ED370033B3E9 /* FontView.swift */,
 				DC7082A72858EFD30033B3E9 /* WordImageView.swift */,
 				DCE19436285B916900673946 /* BackButtonView.swift */,
@@ -402,7 +419,7 @@
 			);
 			name = Artikulata;
 			packageProductDependencies = (
-				DCAA1CE0286B036E00B5482F /* Lottie */,
+				C59DAB3228742AAF00ED4CC5 /* Lottie */,
 			);
 			productName = Artikulata;
 			productReference = C506166428508C0A002F9E3A /* Artikulata.app */;
@@ -477,7 +494,7 @@
 			);
 			mainGroup = C506165B28508C0A002F9E3A;
 			packageReferences = (
-				DCAA1CDF286B036E00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C59DAB3128742AAF00ED4CC5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = C506166528508C0A002F9E3A /* Products */;
 			projectDirPath = "";
@@ -546,10 +563,12 @@
 				DCAA1CA028676E3400B5482F /* LottieAnimationView.swift in Sources */,
 				C5AF21E028630C00002AEAA7 /* KataKerjaModel.mlmodel in Sources */,
 				DCE19437285B916900673946 /* BackButtonView.swift in Sources */,
+				C59DAB2E2874280200ED4CC5 /* KataModel.swift in Sources */,
 				DCBB2F322861EDE9002B353D /* VideoSpeechView.swift in Sources */,
 				06799FF82863013A00B4FC7E /* ListCategories.swift in Sources */,
 				A91D294C2865CCE900C26EF0 /* AudioPlayerObserver.swift in Sources */,
 				C506167428508C0B002F9E3A /* Artikulata.xcdatamodeld in Sources */,
+				C59DAB302874281300ED4CC5 /* IconButton.swift in Sources */,
 				DCAA1CE5286B045400B5482F /* AudioPlayer.swift in Sources */,
 				C506166A28508C0A002F9E3A /* ListWordView.swift in Sources */,
 				C55E67D9286A04AD00C7135C /* Background.swift in Sources */,
@@ -561,6 +580,7 @@
 				06799FF42863009800B4FC7E /* CategoriesButton.swift in Sources */,
 				C55E67D22869B43D00C7135C /* WordCategories.swift in Sources */,
 				DC7082A62858ED370033B3E9 /* FontView.swift in Sources */,
+				C59DAB3528742E6000ED4CC5 /* KategoriModel.swift in Sources */,
 				C5AF21EA2863449D002AEAA7 /* Words.swift in Sources */,
 				C5AF21D928630B58002AEAA7 /* AudioStreamManager.swift in Sources */,
 				C5AF21DE28630C00002AEAA7 /* KataSifatModel.mlmodel in Sources */,
@@ -756,7 +776,7 @@
 				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Artikulata/Preview Content\"";
-				DEVELOPMENT_TEAM = 57HR33A3GN;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Artikulata/Info.plist;
@@ -897,20 +917,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DCAA1CDF286B036E00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		C59DAB3128742AAF00ED4CC5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DCAA1CE0286B036E00B5482F /* Lottie */ = {
+		C59DAB3228742AAF00ED4CC5 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DCAA1CDF286B036E00B5482F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = C59DAB3128742AAF00ED4CC5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
