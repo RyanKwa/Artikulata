@@ -10,9 +10,9 @@ import SwiftUI
 import AVFoundation
 
 struct ListCategories: View {
-    
     var audioPermission = AudioPermission()
-    
+    @State var isActive = false
+    var modulKategori = KategoriModel()
     var body: some View {
         //background color
         NavigationView {
@@ -32,17 +32,20 @@ struct ListCategories: View {
                     
                     //buttons of categories
                     HStack(alignment: .top, spacing: 27){
-                        CategoriesButton(categoriesImage: "Kata-benda", categoriesName: WordCategories.KataBenda)
-                        CategoriesButton(categoriesImage: "Kata-sifat", categoriesName: WordCategories.KataSifat)
-                        CategoriesButton(categoriesImage: "Kata-kerja", categoriesName: WordCategories.KataKerja)
+                        let categories = modulKategori.populateModulKategori()
+                        ForEach(categories, id: \.self) { category in
+                            CategoriesButton(modulKategori: category)
+                        }
                     }
                     .padding(.top, 10)
                 }
                 .padding(.bottom, 30)
+            }.onAppear(){
+                audioPermission.requestPermission()
             }
-        }.onAppear(){
-            audioPermission.requestPermission()
+
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
