@@ -15,6 +15,7 @@ struct FontView: View {
     var body: some View {
         Text(text)
             .font(Font.custom("FredokaOne-Regular", size: CGFloat(size)))
+            .preferredColorScheme(.light)
     }
 }
 

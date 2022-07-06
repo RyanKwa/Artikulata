@@ -23,8 +23,7 @@ struct ListCategories: View {
                 
                 VStack {
                     //title
-                    Text("Mau belajar apa hari ini?")
-                        .font(Font.custom("FredokaOne-Regular", size: 32))
+                    FontView(text: "Mau belajar apa hari ini?", size: 32)
                         .multilineTextAlignment(.center)
                         
                     Spacer()
