@@ -61,6 +61,7 @@ struct ListWordView: View {
                 .padding(.bottom, 30)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     

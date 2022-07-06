@@ -14,6 +14,7 @@ struct CategoriesButton: View {
     var body: some View {
         Button {
             self.isActive = true
+            print("\(isActive)")
         } label: {
             VStack {
                 if let categoryImage = modulKategori?.kategoriImage, let categoryName = modulKategori?.kategoriKata?.rawValue {
@@ -30,7 +31,8 @@ struct CategoriesButton: View {
         .background(
             //MARK: change from force unwrap to other safe unwrap
             NavigationLink(destination: ListWordView(modulKategori: modulKategori!).navigationBarTitle("").navigationBarHidden(true), isActive: $isActive){
-            }.hidden()
+            }
+            .hidden()
             
         )
         

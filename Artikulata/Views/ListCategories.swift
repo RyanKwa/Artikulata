@@ -11,7 +11,7 @@ import AVFoundation
 
 struct ListCategories: View {
     var audioPermission = AudioPermission()
-    
+    @State var isActive = false
     var modulKategori = KategoriModel()
     var body: some View {
         //background color
@@ -40,10 +40,12 @@ struct ListCategories: View {
                     .padding(.top, 10)
                 }
                 .padding(.bottom, 30)
+            }.onAppear(){
+                audioPermission.requestPermission()
             }
-        }.onAppear(){
-            audioPermission.requestPermission()
+
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
